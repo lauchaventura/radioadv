@@ -15,11 +15,10 @@ export default function Home() {
       </Head>
       <ChakraProvider resetCSS theme={theme}>
         <Header />
-        <Container maxW='container.xl' mt={5}>
+        <Container maxW='container.xl' mt={5} >
           <CardsDonation />
           <Footer />
         </Container>
-
       </ChakraProvider>
 
     </>

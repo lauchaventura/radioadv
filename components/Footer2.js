@@ -1,5 +1,5 @@
 
-import { ButtonGroup, Container, IconButton, Stack, Text, Link } from '@chakra-ui/react'
+import { ButtonGroup, Container, IconButton, Stack, Text } from '@chakra-ui/react'
 import * as React from 'react'
 import { FaYoutube, FaFacebook, FaInstagram } from 'react-icons/fa'
 import { Logo } from './Logo'
@@ -12,7 +12,9 @@ const Footer2 = () => {
             py={{
                 base: '12',
                 md: '16',
-            }}
+            }
+            }
+
         >
             <Stack
                 spacing={{
@@ -24,19 +26,23 @@ const Footer2 = () => {
                     <Text>
                         Radio AGUA DE VIDA
                     </Text>
-                    <ButtonGroup variant="ghost" isExtenal>
+                    <ButtonGroup isExtvariant="ghost" >
                         <IconButton
-                            href="youtube.com"
-                            isExternal
+                            as='a'
+
+                            href="https://instagram.com/radioaguadevidaok"
                             aria-label="LinkedIn"
-                            icon={<FaYoutube fontSize="1.25rem" />}
+                            isExternal
+                            icon={<FaYoutube fontSize="1.25rem" isExternal />}
                         />
                         <IconButton
+                            as='a'
                             href="facebook.com/radioaguadevidaok"
                             isExternal
                             aria-label="GitHub"
                             icon={<FaFacebook fontSize="1.25rem" />} />
                         <IconButton
+                            as='a'
                             href="https://instagram.com/radioaguadevidaok"
                             isExternal
                             aria-label="Twitter"

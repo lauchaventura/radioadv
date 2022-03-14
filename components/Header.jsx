@@ -46,12 +46,13 @@ const Header = (props) => {
             </Box>
 
             <Stack
-                marginLeft={7}
+                marginLeft={15}
                 direction={{ base: "column", md: "row", }}
                 display={{ base: isOpen ? "block" : "none", md: "flex" }}
                 width={{ base: "full", md: "auto" }}
                 alignItems="center"
                 flexGrow={1}
+                columnGap={6}
                 mt={{ base: 4, md: 0 }}
             >
                 <div onClick={() => router.push('/programs')}>
@@ -59,7 +60,7 @@ const Header = (props) => {
                         cursor='pointer'
                         colorScheme='white'
                         _hover={{ color: 'gray.300' }}
-                        fontWeight='bold'
+
                         transitionDuration='400ms'
                     >
                         Programas
@@ -71,7 +72,7 @@ const Header = (props) => {
                         cursor='pointer'
                         colorScheme='white'
                         _hover={{ color: 'gray.300' }}
-                        fontWeight='bold'
+
                         transitionDuration='400ms'
 
                     >
@@ -83,9 +84,9 @@ const Header = (props) => {
                         cursor='pointer'
                         colorScheme='white'
                         _hover={{ color: 'gray.300' }}
-                        fontWeight='bold'
+
                         transitionDuration='400ms'
-                        ml={6}
+
                     >
                         DONAR
                     </Text>
