@@ -6,7 +6,7 @@ import theme from '../styles/theme'
 import '@fontsource/montserrat/400.css'
 import '@fontsource/open-sans/700.css'
 import Footer from '../components/Footer2'
-import Carousel from '../components/Carousel'
+import Map from '../components/Map'
 import CardsDonation from '../components/CardsDonation'
 
 export default function Home() {
@@ -19,7 +19,7 @@ export default function Home() {
         <Header />
         <Container maxW='container.xl' mt={5} >
           <CardsDonation />
-          <Carousel />
+          <Map />
           <Footer />
 
         </Container>

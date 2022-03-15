@@ -82,7 +82,7 @@ const CardsDonation = () => {
                             <Text fontSize="0.8em" color="#737373">
                                 Ayudas a difundir desde cualquier parte del mundo
                             </Text>
-                            <Link href='https://www.paypal.com/donate/?hosted_button_id=QZ5VDQ8AQ5UXA' isExternal>
+                            <Link href='https://www.paypal.com/donate/?hosted_button_id=QZ5VDQ8AQ5UXA' isExternal >
                                 <Button mt={2}>
                                     DONAR
                                 </Button>
