@@ -29,7 +29,7 @@ const CardsDonation = () => {
                             </Text>
                             <Link isExternal>
                                 <Button mt={2} >
-                                    DONAR!
+                                    DONAR
                                 </Button>
                             </Link>
 
@@ -45,7 +45,7 @@ const CardsDonation = () => {
                         textAlign="center"
                     >
                         <Image
-                            src="https://cdn.icon-icons.com/icons2/1467/PNG/512/phonenewmessage_101063.png"
+                            src="https://res.cloudinary.com/dsjas6fvz/image/upload/v1647310535/Radio%20Agua%20de%20Vida/phonenewmessage_101063_ovksye.png"
                             alt="card-img"
                             objectFit="cover"
                         ></Image>
@@ -80,11 +80,11 @@ const CardsDonation = () => {
                                 Donar a traves de Paypal o tarjeta
                             </Text>
                             <Text fontSize="0.8em" color="#737373">
-                                Ayudas a difundir desde cualquier parte del
+                                Ayudas a difundir desde cualquier parte del mundo
                             </Text>
                             <Link href='https://www.paypal.com/donate/?hosted_button_id=QZ5VDQ8AQ5UXA' isExternal>
                                 <Button mt={2}>
-                                    DONAR!
+                                    DONAR
                                 </Button>
                             </Link>
 

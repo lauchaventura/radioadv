@@ -1,5 +1,5 @@
 
-import { ButtonGroup, Container, IconButton, Stack, Text } from '@chakra-ui/react'
+import { ButtonGroup, Container, IconButton, Stack, Text, Link } from '@chakra-ui/react'
 import * as React from 'react'
 import { FaYoutube, FaFacebook, FaInstagram } from 'react-icons/fa'
 import { Logo } from './Logo'
@@ -26,35 +26,38 @@ const Footer2 = () => {
                     <Text>
                         Radio AGUA DE VIDA
                     </Text>
-                    <ButtonGroup isExtvariant="ghost" >
-                        <IconButton
-                            as='a'
+                    <ButtonGroup variant="ghost" >
+                        <Link href="https://youtube.com/radioaguadevidaok" isExternal>
+                            <IconButton
+                                as='a'
+                                aria-label="Youtube"
+                                isExternal
+                                icon={<FaYoutube fontSize="1.25rem" isExternal />}
+                            />
+                        </Link>
 
-                            href="https://instagram.com/radioaguadevidaok"
-                            aria-label="LinkedIn"
-                            isExternal
-                            icon={<FaYoutube fontSize="1.25rem" isExternal />}
-                        />
-                        <IconButton
-                            as='a'
-                            href="facebook.com/radioaguadevidaok"
-                            isExternal
-                            aria-label="GitHub"
-                            icon={<FaFacebook fontSize="1.25rem" />} />
-                        <IconButton
-                            as='a'
-                            href="https://instagram.com/radioaguadevidaok"
-                            isExternal
-                            aria-label="Twitter"
-                            icon={<FaInstagram fontSize="1.25rem" />}
-                        />
+                        <Link href="https://facebook.com/radioaguadevidaok" isExternal>
+                            <IconButton
+                                aria-label="Facebook"
+                                icon={<FaFacebook fontSize="1.25rem" />} />
+                        </Link>
+                        <Link href="https://instagram.com/radioaguadevidaok" isExternal>
+
+                            <IconButton
+                                as='a'
+
+                                isExternal
+                                aria-label="Instagram"
+                                icon={<FaInstagram fontSize="1.25rem" />}
+                            />
+                        </Link>
                     </ButtonGroup>
                 </Stack>
                 <Text fontSize="sm" color="subtle">
                     &copy; {new Date().getFullYear()} Radio Agua de Vida by @lauchaventura. Todos los derechos reservados.
                 </Text>
             </Stack>
-        </Container>
+        </Container >
     );
 };
 
