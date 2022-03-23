@@ -4,10 +4,10 @@ import { Box, Image, Text, Button, Link, SimpleGrid, Container } from "@chakra-u
 const CardsDonation = () => {
     return (
         <>
-            <Container maxW='container.xl' centerContent >
+            <Container maxW='container.xl' centerContent mt={10} >
                 <SimpleGrid columns={[1, 2, 3]} spacing={5} alignItems='center'  >
                     <Box
-                        maxW="250"
+                        maxW="350"
                         padding="2"
                         borderRadius="14"
                         boxShadow="lg"
@@ -37,7 +37,7 @@ const CardsDonation = () => {
                     </Box>
 
                     <Box
-                        maxW="250"
+                        maxW="350"
                         padding="2"
                         borderRadius="14"
                         boxShadow="lg"
@@ -63,7 +63,7 @@ const CardsDonation = () => {
                         </Box>
                     </Box>
                     <Box
-                        maxW="250"
+                        maxW="350"
                         padding="2"
                         borderRadius="14"
                         boxShadow="lg"

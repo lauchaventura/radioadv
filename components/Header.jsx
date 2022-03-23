@@ -91,6 +91,17 @@ const Header = (props) => {
                         DONAR
                     </Text>
                 </div>
+                <div onClick={() => router.push('/programs')}>
+                    <Text
+                        cursor='pointer'
+                        colorScheme='white'
+                        _hover={{ color: 'gray.300' }}
+
+                        transitionDuration='400ms'
+                    >
+                        NUESTROS PROYECTOS
+                    </Text>
+                </div>
             </Stack>
 
 

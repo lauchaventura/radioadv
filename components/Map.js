@@ -3,7 +3,7 @@ import { Box, chakra, SimpleGrid, Text, Container, Stack, Button, Link } from "@
 import { GrMapLocation } from 'react-icons/gr';
 const Map = () => {
     return (
-        <Container maxW='container.xl' as="nav"
+        <Container maxW='container.xl'
             align="center"
             justify="space-between"
             wrap="wrap"
@@ -28,8 +28,8 @@ const Map = () => {
                     <Text fontWeight='bold' fontSize='2xl'>
                         #Conectados con La Realidad
                     </Text>
-                    <Link href='https://g.page/radioaguadevidaok?share' isExternal>
-                        <Button size='lg' mt={2} leftIcon={<GrMapLocation color='white' />}>
+                    <Link isExternal href='https://g.page/radioaguadevidaok?share' >
+                        <Button _hover={{ bg: 'gray.300' }} bg='gray.100' size='lg' mt={2} leftIcon={<GrMapLocation color='white' />}>
                             Quiero llegar
                         </Button>
                     </Link>

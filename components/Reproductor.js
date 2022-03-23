@@ -1,0 +1,30 @@
+import React from "react";
+import { Box, StylesProvider, Text, Image } from '@chakra-ui/react'
+import AudioPlayer from "react-h5-audio-player";
+import "react-h5-audio-player/lib/styles.css";
+import styles from '../styles/AudioPlayer.module.css'
+
+const Reproductor = () => {
+    return (
+        <Box bg='#1D3557' borderRadius={25} >
+            <Box padding={3}>
+                <Image borderRadius='full' boxSize='250px' src='https://res.cloudinary.com/dsjas6fvz/image/upload/v1648063433/Radio%20Agua%20de%20Vida/logoradio.png' alt='logoradio' />
+            </Box>
+            <AudioPlayer
+                src="https://serverssl.deradios.stream/8354/stream*540.stream"
+                showJumpControls={false}
+                style={{
+                    borderColor: 'white',
+                    underline: 'outline',
+                    backgroundColor: 'white',
+
+                }}
+                customProgressBarSection={[]}
+                customControlsSection={["MAIN_CONTROLS", "VOLUME_CONTROLS"]}
+                autoPlayAfterSrcChange={false}
+            />
+        </Box>
+    )
+};
+
+export default Reproductor;
