@@ -5,7 +5,7 @@ import Footer from '../components/Footer'
 import Map from '../components/Map'
 import CardsDonation from '../components/CardsDonation'
 import Presentation from '../components/Presentation'
-import styles from '../styles/AudioPlayer.module.css'
+import styles from '../styles/AudioPlayer.module.scss'
 export default function Home() {
   return (
     <>

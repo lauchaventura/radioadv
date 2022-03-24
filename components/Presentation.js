@@ -1,8 +1,8 @@
 import { Box, chakra, SimpleGrid, Text, Container, Stack, Button, Link, Heading, Code } from "@chakra-ui/react";
-import { GrMapLocation } from 'react-icons/gr';
+import { GrMapLocation, GrPlay } from 'react-icons/gr';
 import React from "react";
 import Reproductor from './Reproductor'
-import styles from '../styles/AudioPlayer.module.css'
+import styles from '../styles/AudioPlayer.module.scss'
 
 const Presentation = () => {
     return (
@@ -22,7 +22,7 @@ const Presentation = () => {
 
                 </Box>
                 <Box  >
-                    <Reproductor />
+                    <Reproductor className={styles.player} />
                 </Box>
 
             </SimpleGrid>
