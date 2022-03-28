@@ -9,17 +9,13 @@ const Presentation = () => {
         <Container maxW='container.xl'
             align="center"
             color="black"
-            bg='#F1FAEE'
         >
-            <SimpleGrid height='92vh' alignItems='center' columns={[1, 2]} >
+            <SimpleGrid height='78vh' alignItems='center' columns={[1, 2]} >
                 <Box>
-                    <Code fontSize='34px'>
-                        Somos distinto a los demas
-                    </Code>
-                    <Text fontWeight='bold'>
-                        Estamos #ConectadosConLaRealidad
-                    </Text>
-
+                    <Heading size='4xl' as='h2' align='center' bgGradient='linear(to-l, #1D3557, #457B9D)'
+                        bgClip='text'>
+                        Somos distinto a los demas...
+                    </Heading>
                 </Box>
                 <Box  >
                     <Reproductor className={styles.player} />

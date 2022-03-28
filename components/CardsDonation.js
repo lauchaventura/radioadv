@@ -4,27 +4,23 @@ import { Box, Image, Text, Button, Link, SimpleGrid, Container } from "@chakra-u
 const CardsDonation = () => {
     return (
         <>
-            <Container maxW='container.xl' centerContent mt={10} >
-                <SimpleGrid columns={[1, 2, 3]} spacing={5} alignItems='center'  >
+            <Container maxW='container.xl' centerContent mt={28} >
+                <SimpleGrid columns={[1, 2, 3]} spacing={7} alignItems='center'  >
                     <Box
                         maxW="350"
-                        padding="2"
-                        borderRadius="14"
                         boxShadow="lg"
-                        backgroundColor="#fff"
                         textAlign="center"
-
                     >
                         <Image
                             src="https://www.mgscreativa.com/images/stories/virtuemart/product/logo-mercadopago9.png"
                             alt="card-img"
                             objectFit="cover"
                         ></Image>
-                        <Box marginTop="0.8em" marginBottom="0.8em">
+                        <Box bg='#457B9D' padding="3">
                             <Text fontSize="1em" fontWeight="600" marginBottom="0.5em">
                                 Donar a traves de MercadoPago
                             </Text>
-                            <Text fontSize="0.8em" color="#737373">
+                            <Text fontSize="0.8em" color="white">
                                 Ayudas a difundir aun mas nuestro ministerio
                             </Text>
                             <Link isExternal>
@@ -38,10 +34,7 @@ const CardsDonation = () => {
 
                     <Box
                         maxW="350"
-                        padding="2"
-                        borderRadius="14"
                         boxShadow="lg"
-                        backgroundColor="#fff"
                         textAlign="center"
                     >
                         <Image
@@ -49,7 +42,7 @@ const CardsDonation = () => {
                             alt="card-img"
                             objectFit="cover"
                         ></Image>
-                        <Box marginTop="0.8em" marginBottom="0.8em">
+                        <Box bg='#457B9D' padding="6"  >
                             <Text fontSize="1em" fontWeight="600" marginBottom="0.5em">
                                 Donar a traves de Telefono y/o celular
                             </Text>
@@ -65,7 +58,6 @@ const CardsDonation = () => {
                     <Box
                         maxW="350"
                         padding="2"
-                        borderRadius="14"
                         boxShadow="lg"
                         backgroundColor="#fff"
                         textAlign="center"
@@ -75,7 +67,7 @@ const CardsDonation = () => {
                             alt="card-img"
                             objectFit="cover"
                         ></Image>
-                        <Box marginTop="0.8em" marginBottom="0.8em">
+                        <Box>
                             <Text fontSize="1em" fontWeight="600" marginBottom="0.5em">
                                 Donar a traves de Paypal o tarjeta
                             </Text>

@@ -32,9 +32,12 @@ const Header = (props) => {
                 <div onClick={() => router.push('/')} >
                     <Heading
                         cursor='pointer'
-                        as="h1"
-                        size="lg"
+                        as='h3'
+                        size='lg'
                         letterSpacing={"tighter"}
+                        color='white'
+                        bg='#219ebc'
+                        p={2}
                     >
                         Radio Agua de Vida
                     </Heading>
@@ -58,7 +61,7 @@ const Header = (props) => {
                 <div onClick={() => router.push('/programs')}>
                     <Text
                         cursor='pointer'
-                        colorScheme='white'
+                        color='#219ebc'
                         _hover={{ color: 'gray.300' }}
 
                         transitionDuration='400ms'
@@ -70,7 +73,7 @@ const Header = (props) => {
                 <div onClick={() => router.push('/grid')}>
                     <Text
                         cursor='pointer'
-                        colorScheme='white'
+                        color='#219ebc'
                         _hover={{ color: 'gray.300' }}
 
                         transitionDuration='400ms'
@@ -82,9 +85,8 @@ const Header = (props) => {
                 <div>
                     <Text
                         cursor='pointer'
-                        colorScheme='white'
+                        color='#219ebc'
                         _hover={{ color: 'gray.300' }}
-
                         transitionDuration='400ms'
 
                     >
@@ -94,7 +96,7 @@ const Header = (props) => {
                 <div onClick={() => router.push('/programs')}>
                     <Text
                         cursor='pointer'
-                        colorScheme='white'
+                        color='#219ebc'
                         _hover={{ color: 'gray.300' }}
 
                         transitionDuration='400ms'
@@ -113,7 +115,7 @@ const Header = (props) => {
 
                     display='flex'
                     margin='4px'
-                    columnGap='15px'
+                    columnGap='20px'
 
                 >
 
@@ -123,7 +125,7 @@ const Header = (props) => {
                         _hover={{ color: 'gray.300' }}
                         transitionDuration='400ms'
                     >
-                        <BsYoutube size='20px' />
+                        <BsYoutube color='gray' size='20px' />
                     </Link>
                     <Link
                         href='https://facebook.com/radioaguadevidaok'
@@ -131,7 +133,7 @@ const Header = (props) => {
                         _hover={{ color: 'gray.300' }}
                         transitionDuration='400ms'
                     >
-                        <BsFacebook size='20px' />
+                        <BsFacebook color='gray' size='20px' />
                     </Link>
                     <Link
                         href='https://instagram.com/radioaguadevidaok'
@@ -139,7 +141,7 @@ const Header = (props) => {
                         _hover={{ color: 'gray.300' }}
                         transitionDuration='400ms'
                     >
-                        <BsInstagram size='20px' />
+                        <BsInstagram color='gray' size='20px' />
                     </Link>
                 </Box>
             </Stack>
