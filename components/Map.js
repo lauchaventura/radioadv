@@ -11,9 +11,6 @@ const Map = () => {
             color="black"
             mt={5}
         >
-            <Text color='1D3557' fontWeight='bold' fontSize='30px' >
-                ¿COMO LLEGAR?
-            </Text>
             <SimpleGrid alignItems='center' columns={[1, 2]} spacing={5} mt={9}>
                 <Box boxShadow="2xl"
                     backgroundColor="#fff"  >

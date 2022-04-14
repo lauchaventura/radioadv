@@ -16,6 +16,7 @@ import {
 
 } from "@chakra-ui/react";
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 import theme from '../styles/theme'
 import '@fontsource/montserrat/400.css'
 import '@fontsource/open-sans/700.css'
@@ -41,41 +42,48 @@ const grid = () => {
                         <Badge
                             variant="solid"
                             colorScheme='green'
-                            fontSize='30px'>
+                            fontSize='30px'
+                            align='center'
+                        >
                             Programación
                         </Badge>
                     </Box>
-                    <Tabs variant='unstyled' size='md' isLazy>
+                    <Tabs orientation='vertical' borderColor='transparent' size='lg'>
                         <TabList
-                            css={css({
-                                scrollbarWidth: 'none',
-                                '::-webkit-scrollbar': { display: 'none' },
-                                '-webkit-overflow-scrolling': 'touch',
-                                boxShadow: 'inset 0 -2px 0 rgba(0, 0, 0, 0.1)',
-                                border: '0 none',
-                            })}
+
                         >
                             <Tab _selected={{ color: 'white', bg: 'blue.500' }}>LUNES</Tab>
                             <Tab _selected={{ color: 'white', bg: 'green.400' }}>MARTES</Tab>
                             <Tab _selected={{ color: 'white', bg: 'green.400' }}>MIERCOLES</Tab>
                             <Tab _selected={{ color: 'white', bg: 'green.400' }}>JUEVES</Tab>
-                            <Tab _selected={{ color: 'white', bg: 'green.400' }}>JUEVES</Tab>
-                            <Tab _selected={{ color: 'white', bg: 'green.400' }}>JUEVES</Tab>
-                            <Tab _selected={{ color: 'white', bg: 'green.400' }}>JUEVES</Tab>
+                            <Tab _selected={{ color: 'white', bg: 'green.400' }}>VIERNES</Tab>
+                            <Tab _selected={{ color: 'white', bg: 'green.400' }}>SABADO</Tab>
+                            <Tab _selected={{ color: 'white', bg: 'green.400' }}>DOMINGO</Tab>
                         </TabList>
                         <TabPanels>
-                            <TabPanel bg='red.100'>
-                                <Text fontSize='xl' fontWeight='bold'>
+                            <TabPanel bg='red.100' height='100%' >
+                                <Text fontSize='lg' fontWeight='bold'>
                                     Quien Ira - 8AM
                                     <Badge mb={3} ml='1' variant='outline' fontSize='0.5em' colorScheme='red'>
                                         NUEVO
                                     </Badge>
                                 </Text>
-                                <p>Un Tiempo Para Todos - 9:30 AM</p>
-                                <p>En Linea - 12 PM</p>
-                                <p>Mujeres de Fe - 17PM</p>
-                                <p>Herederos de Victoria - 18PM</p>
-                                <p>Entre Lineas - 20PM</p>
+                                <Text fontSize='lg' fontWeight='bold'>
+                                    Un Tiempo Para Todos - 9:30
+                                </Text>
+                                <Text fontSize='lg' fontWeight='bold'>
+                                    En Linea - 12 PM
+                                </Text>
+                                <Text fontSize='lg' fontWeight='bold'>
+                                    Mujeres de Fe - 17PM
+                                </Text>
+                                <Text fontSize='lg' fontWeight='bold'>
+                                    Herederos de Victoria - 18PM
+                                </Text>
+                                <Text fontSize='lg' fontWeight='bold'>
+                                    Entre Lineas - 20PM
+                                </Text>
+
                             </TabPanel>
                             <TabPanel>
                                 <p>two!</p>
@@ -94,8 +102,10 @@ const grid = () => {
                             </TabPanel>
                         </TabPanels>
                     </Tabs>
+                    <Footer />
                 </Container>
             </ChakraProvider>
+
         </>
     )
 };

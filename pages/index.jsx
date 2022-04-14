@@ -5,6 +5,7 @@ import Footer from '../components/Footer'
 import Map from '../components/Map'
 import CardsDonation from '../components/CardsDonation'
 import Presentation from '../components/Presentation'
+import Reproductor from '../components/Reproductor'
 import styles from '../styles/AudioPlayer.module.scss'
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Container maxW='container.xl' >
         <Presentation />
         <CardsDonation />
+        <Reproductor />
         <Map />
         <Footer />
       </Container>

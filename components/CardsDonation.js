@@ -1,89 +1,199 @@
 import React from "react";
-import { Box, Image, Text, Button, Link, SimpleGrid, Container } from "@chakra-ui/react";
+import { Box, Image, Text, Button, Link, SimpleGrid, chakra, Flex } from "@chakra-ui/react";
 
 const CardsDonation = () => {
     return (
         <>
-            <Container maxW='container.xl' centerContent mt={28} >
-                <SimpleGrid columns={[1, 2, 3]} spacing={7} alignItems='center'  >
-                    <Box
-                        maxW="350"
-                        boxShadow="lg"
-                        textAlign="center"
+            <SimpleGrid columns={[1, 2, 3]} spacing={3}  >
+                <Flex
+                    w="full"
+                    alignItems="center"
+                    justifyContent="center"
+
+                >
+                    <Flex
+                        maxW="md"
+                        mx="auto"
+                        shadow="lg"
+                        rounded="lg"
+                        overflow="hidden"
                     >
-                        <Image
-                            src="https://www.mgscreativa.com/images/stories/virtuemart/product/logo-mercadopago9.png"
-                            alt="card-img"
-                            objectFit="cover"
-                        ></Image>
-                        <Box bg='#457B9D' padding="3">
-                            <Text fontSize="1em" fontWeight="600" marginBottom="0.5em">
-                                Donar a traves de MercadoPago
-                            </Text>
-                            <Text fontSize="0.8em" color="white">
-                                Ayudas a difundir aun mas nuestro ministerio
-                            </Text>
-                            <Link isExternal>
-                                <Button mt={2} >
+                        <Box
+                            w={1 / 3}
+                            bgSize="cover"
+                            style={{
+                                backgroundImage:
+                                    "url('https://cdn.pixabay.com/photo/2018/05/08/21/29/paypal-3384015_960_720.png')",
+                            }}
+                        ></Box>
+
+                        <Box w={2 / 3} p={{ base: 4, md: 4 }}>
+                            <chakra.h1
+                                fontSize="2xl"
+                                fontWeight="bold"
+                            >
+                                Tarjeta o Paypal
+                            </chakra.h1>
+
+                            <chakra.p
+                                mt={2}
+                                fontSize="sm"
+                            >
+                                Podes apoyar nuestros servicios desde cualquier parte del Mundo
+                            </chakra.p>
+
+                            <Flex mt={3} alignItems="center" justifyContent="space-between">
+                                <chakra.h1 color="white" fontWeight="bold" fontSize="lg">
+                                    $220
+                                </chakra.h1>
+                                <chakra.button
+                                    px={2}
+                                    py={1}
+                                    bg="white"
+                                    fontSize="xs"
+                                    color="gray.900"
+                                    fontWeight="bold"
+                                    rounded="lg"
+                                    textTransform="uppercase"
+                                    _hover={{
+                                        bg: "gray.200",
+                                    }}
+                                    _focus={{
+                                        bg: "gray.400",
+                                    }}
+                                >
                                     DONAR
-                                </Button>
-                            </Link>
-
+                                </chakra.button>
+                            </Flex>
                         </Box>
-                    </Box>
+                    </Flex>
+                </Flex>
+                <Flex
+                    w="full"
+                    alignItems="center"
+                    justifyContent="center"
+                >
+                    <Flex
+                        maxW="md"
+                        mx="auto"
 
-                    <Box
-                        maxW="350"
-                        boxShadow="lg"
-                        textAlign="center"
+                        shadow="lg"
+                        rounded="lg"
+                        overflow="hidden"
                     >
-                        <Image
-                            src="https://res.cloudinary.com/dsjas6fvz/image/upload/v1647310535/Radio%20Agua%20de%20Vida/phonenewmessage_101063_ovksye.png"
-                            alt="card-img"
-                            objectFit="cover"
-                        ></Image>
-                        <Box bg='#457B9D' padding="6"  >
-                            <Text fontSize="1em" fontWeight="600" marginBottom="0.5em">
-                                Donar a traves de Telefono y/o celular
-                            </Text>
-                            <Text fontSize="0.8em" color="#737373">
-                                En ARG: 2984134931
-                            </Text>
-                            <Text fontSize="0.8em" color="#737373">
-                                En el Exterior: (+54 9 2984134931)
-                            </Text>
+                        <Box
+                            w={1 / 3}
+                            bgSize="cover"
+                            style={{
+                                backgroundImage:
+                                    "url('https://s03.s3c.es/imag/_v0/487x453/2/5/a/mercado-pago.png')",
+                            }}
+                        ></Box>
 
-                        </Box>
-                    </Box>
-                    <Box
-                        maxW="350"
-                        padding="2"
-                        boxShadow="lg"
-                        backgroundColor="#fff"
-                        textAlign="center"
-                    >
-                        <Image
-                            src='https://cdn.pixabay.com/photo/2018/05/08/21/29/paypal-3384015_960_720.png'
-                            alt="card-img"
-                            objectFit="cover"
-                        ></Image>
-                        <Box>
-                            <Text fontSize="1em" fontWeight="600" marginBottom="0.5em">
-                                Donar a traves de Paypal o tarjeta
-                            </Text>
-                            <Text fontSize="0.8em" color="#737373">
-                                Ayudas a difundir desde cualquier parte del mundo
-                            </Text>
-                            <Link href='https://www.paypal.com/donate/?hosted_button_id=QZ5VDQ8AQ5UXA' isExternal >
-                                <Button mt={2}>
+                        <Box w={2 / 3} p={{ base: 4, md: 4 }}>
+                            <chakra.h1
+                                fontSize="2xl"
+                                fontWeight="bold"
+                            >
+                                Mercado Pago
+                            </chakra.h1>
+
+                            <chakra.p
+                                mt={2}
+                                fontSize="sm"
+                            >
+                                Podes apoyar nuestros servicios en territorio nacional(ARG)
+                            </chakra.p>
+
+                            <Flex mt={3} alignItems="center" justifyContent="space-between">
+                                <chakra.h1 color="white" fontWeight="bold" fontSize="lg">
+                                    $220
+                                </chakra.h1>
+                                <chakra.button
+                                    px={2}
+                                    py={1}
+                                    bg="white"
+                                    fontSize="xs"
+                                    color="gray.900"
+                                    fontWeight="bold"
+                                    rounded="lg"
+                                    textTransform="uppercase"
+                                    _hover={{
+                                        bg: "gray.200",
+                                    }}
+                                    _focus={{
+                                        bg: "gray.400",
+                                    }}
+                                >
                                     DONAR
-                                </Button>
-                            </Link>
-
+                                </chakra.button>
+                            </Flex>
                         </Box>
-                    </Box>
-                </SimpleGrid>
-            </Container>
+                    </Flex>
+                </Flex>
+                <Flex
+                    w="full"
+                    alignItems="center"
+                    justifyContent="center"
+                >
+                    <Flex
+                        maxW="md"
+                        mx="auto"
+                        shadow="lg"
+                        rounded="lg"
+                        overflow="hidden"
+                    >
+                        <Box
+                            w={1 / 3}
+                            bgSize="cover"
+                            style={{
+                                backgroundImage:
+                                    "url('https://res.cloudinary.com/dsjas6fvz/image/upload/v1647310535/Radio%20Agua%20de%20Vida/phonenewmessage_101063_ovksye.png')",
+                            }}
+                        ></Box>
+
+                        <Box w={2 / 3} p={{ base: 4, md: 4 }}>
+                            <chakra.h1
+                                fontSize="2xl"
+                                fontWeight="bold"
+                            >
+                                Telefono o celular
+                            </chakra.h1>
+
+                            <chakra.p
+                                mt={2}
+                                fontSize="sm"
+                            >
+                                LLamanos al +54 9 2984134931 y te asesoramos de la mejor manera
+                            </chakra.p>
+
+                            <Flex mt={3} alignItems="center" justifyContent="space-between">
+                                <chakra.h1 color="white" fontWeight="bold" fontSize="lg">
+                                    $220
+                                </chakra.h1>
+                                <chakra.button
+                                    px={2}
+                                    py={1}
+                                    bg="white"
+                                    fontSize="xs"
+                                    color="gray.900"
+                                    fontWeight="bold"
+                                    rounded="lg"
+                                    textTransform="uppercase"
+                                    _hover={{
+                                        bg: "gray.200",
+                                    }}
+                                    _focus={{
+                                        bg: "gray.400",
+                                    }}
+                                >
+                                    DONAR
+                                </chakra.button>
+                            </Flex>
+                        </Box>
+                    </Flex>
+                </Flex>
+            </SimpleGrid>
         </>
 
     );
