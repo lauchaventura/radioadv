@@ -70,7 +70,7 @@ const Header = (props) => {
                     </Text>
                 </div>
 
-                <div onClick={() => router.push('/grid')}>
+                <div onClick={() => router.push('/grilla')}>
                     <Text
                         cursor='pointer'
                         color='#219ebc'

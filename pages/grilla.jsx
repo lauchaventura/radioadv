@@ -22,7 +22,7 @@ import '@fontsource/montserrat/400.css'
 import '@fontsource/open-sans/700.css'
 import Head from "next/head";
 
-const grid = () => {
+const grilla = () => {
     const { isOpen, onOpen, onClose } = useDisclosure();
     const handleToggle = () => (isOpen ? onClose() : onOpen());
     const router = useRouter();
@@ -110,4 +110,4 @@ const grid = () => {
     )
 };
 
-export default grid;
+export default grilla;

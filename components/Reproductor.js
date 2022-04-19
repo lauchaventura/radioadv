@@ -13,22 +13,20 @@ const Reproductor = () => {
             align='center'
             mt={9}
             bg='black'
-        >
-            <SimpleGrid columns={[1, 2]} alignItems='center' justify='center'>
-                <Box bg='#1D3557' boxSize='240px' >
-                    <Box padding={3}>
-                        <Image borderRadius='full' boxSize='150px' src='https://res.cloudinary.com/dsjas6fvz/image/upload/v1648063433/Radio%20Agua%20de%20Vida/logoradio.png' alt='logoradio' />
 
-                    </Box>
+        >
+            <SimpleGrid columns={[1, 2]} alignItems='center' justify='center' padding='20px'>
+                <Box alignItems='center'>
                     <AudioPlayer
                         src="https://serverssl.deradios.stream/8354/stream*540.stream"
                         showJumpControls={false}
                         style={{
-                            borderColor: '',
-                            underline: 'outline',
                             backgroundColor: 'white',
                             color: 'black',
-                            width: '100%'
+                            width: '70%',
+
+                            borderRadius: '20px',
+
                         }}
                         customIcons={{
                             play: <GrPlay size={22} />,
@@ -40,7 +38,7 @@ const Reproductor = () => {
                         customControlsSection={["MAIN_CONTROLS", "VOLUME_CONTROLS"]}
                         autoPlayAfterSrcChange={false}
                     />
-                </Box >
+                </Box>
                 <Box>
                     <Text color='white'>
                         Escuchanos desde cualquier parte del mundo vayas donde vayas, estes donde estes

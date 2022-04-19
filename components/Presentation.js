@@ -20,9 +20,7 @@ const Presentation = () => {
                 </Box>
                 <Box >
                     <Heading size='lg' >
-                        El proyecto de nuestra radio “Agua de Vida” se inició el 13
-                        de agosto de 2016, con la propuesta formal realizada por el hno Rodrigo Ferreyra
-                        a nuestro pastor Abel Moya Salas, de hacer una radio propia de nuestra iglesia.
+
                     </Heading>
                 </Box>
 
