@@ -23,9 +23,6 @@ import '@fontsource/open-sans/700.css'
 import Head from "next/head";
 
 const grilla = () => {
-    const { isOpen, onOpen, onClose } = useDisclosure();
-    const handleToggle = () => (isOpen ? onClose() : onOpen());
-    const router = useRouter();
     return (
         <>
             <Head>

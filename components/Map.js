@@ -9,9 +9,9 @@ const Map = () => {
             wrap="wrap"
             padding={3}
             color="black"
-            mt={5}
+
         >
-            <SimpleGrid alignItems='center' columns={[1, 2]} spacing={5} mt={9}>
+            <SimpleGrid alignItems='center' columns={[1, 2]} spacing={5} mt={5}>
                 <Box boxShadow="2xl"
                     backgroundColor="#fff"  >
                     <Box overflow='hidden' paddingBottom='400' position='relative' height='0' >

@@ -4,7 +4,7 @@ import { Box, Image, Text, Button, Link, SimpleGrid, chakra, Flex } from "@chakr
 const CardsDonation = () => {
     return (
         <>
-            <SimpleGrid columns={[1, 2, 3]} spacing={3}  >
+            <SimpleGrid columns={[1, 2, 3]} spacing={3} mt={7}   >
                 <Flex
                     w="full"
                     alignItems="center"

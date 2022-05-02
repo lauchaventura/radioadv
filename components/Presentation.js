@@ -6,27 +6,22 @@ import styles from '../styles/AudioPlayer.module.scss'
 
 const Presentation = () => {
     return (
-        <Container maxW='container.xl'
-            align="center"
-            color="black"
-            centerContent
-        >
-            <SimpleGrid height='88vh' alignItems='center' columns={[1, 2]}  >
-                <Box>
-                    <Heading size='4xl' as='h2' align='center' bgGradient='linear(to-l, #1D3557, #457B9D)'
-                        bgClip='text'>
-                        Somos distinto a los demas...
-                    </Heading>
-                </Box>
-                <Box >
-                    <Heading size='lg' >
+        <SimpleGrid
+            backgroundImage="url('https://res.cloudinary.com/dsjas6fvz/image/upload/v1651251879/Radio%20Agua%20de%20Vida/traica_cbqogx.jpg')"
+            bgRepeat="no-repeat"
+            height='90vh'
+            alignItems='center'
+            bgSize={{ base: '300%', md: '200$', lg: '100%' }}
+            fontWeight='900px'
+            position='relative' >
 
-                    </Heading>
-                </Box>
+            <Text fontWeight='extrabold' fontSize='70px' color='white' align='center'
+            >
+                SOMOS DISTINTOS A LOS DEMAS...
+            </Text>
 
-            </SimpleGrid>
 
-        </Container >
+        </SimpleGrid>
     )
         ;
 };

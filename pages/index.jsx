@@ -14,13 +14,12 @@ export default function Home() {
         <title>Radio Agua de Vida</title>
       </Head>
       <Header />
-      <Container maxW='container.xl' >
-        <Presentation />
-        <CardsDonation />
-        <Reproductor />
-        <Map />
-        <Footer />
-      </Container>
+      <Presentation />
+      <CardsDonation />
+      <Reproductor />
+      <Map />
+      <Footer />
+
     </>
 
   )

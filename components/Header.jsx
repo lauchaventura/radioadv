@@ -9,6 +9,7 @@ import {
     Text,
     Link,
     Button,
+    Badge,
     useDisclosure
 } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
@@ -23,10 +24,11 @@ const Header = (props) => {
             align="center"
             justify="space-between"
             wrap="wrap"
-            padding={3}
-            bg="#"
-            color="#1D3557"
+            padding={2}
+            boxShadow='xl'
             {...props}
+            backgroundColor='transparent'
+            background='transparent'
         >
             <Flex align="center" mr={5}>
                 <div onClick={() => router.push('/')} >
@@ -36,7 +38,7 @@ const Header = (props) => {
                         size='lg'
                         letterSpacing={"tighter"}
                         color='white'
-                        bg='#219ebc'
+                        bg='#1d3557'
                         p={2}
                     >
                         Radio Agua de Vida
@@ -55,15 +57,15 @@ const Header = (props) => {
                 width={{ base: "full", md: "auto" }}
                 alignItems="center"
                 flexGrow={1}
-                columnGap={6}
+                columnGap={10}
                 mt={{ base: 4, md: 0 }}
             >
                 <div onClick={() => router.push('/programs')}>
                     <Text
                         cursor='pointer'
-                        color='#219ebc'
+                        color='#1d3557'
+                        fontWeight='bold'
                         _hover={{ color: 'gray.300' }}
-
                         transitionDuration='400ms'
                     >
                         Programas
@@ -73,9 +75,9 @@ const Header = (props) => {
                 <div onClick={() => router.push('/grilla')}>
                     <Text
                         cursor='pointer'
-                        color='#219ebc'
+                        color='1d3557'
                         _hover={{ color: 'gray.300' }}
-
+                        fontWeight='bold'
                         transitionDuration='400ms'
 
                     >
@@ -85,10 +87,10 @@ const Header = (props) => {
                 <div>
                     <Text
                         cursor='pointer'
-                        color='#219ebc'
+                        color='#1d3557'
                         _hover={{ color: 'gray.300' }}
                         transitionDuration='400ms'
-
+                        fontWeight='bold'
                     >
                         DONAR
                     </Text>
@@ -96,9 +98,9 @@ const Header = (props) => {
                 <div onClick={() => router.push('/programs')}>
                     <Text
                         cursor='pointer'
-                        color='#219ebc'
+                        color='#1d3557'
                         _hover={{ color: 'gray.300' }}
-
+                        fontWeight='bold'
                         transitionDuration='400ms'
                     >
                         NUESTROS PROYECTOS
@@ -112,37 +114,12 @@ const Header = (props) => {
                 mt={{ base: 4, md: 0 }}
             >
                 <Box
-
                     display='flex'
-                    margin='4px'
-                    columnGap='20px'
-
+                    margin='9px'
                 >
-
-                    <Link
-                        href='https://youtube.com'
-                        isExternal
-                        _hover={{ color: 'gray.300' }}
-                        transitionDuration='400ms'
-                    >
-                        <BsYoutube color='gray' size='20px' />
-                    </Link>
-                    <Link
-                        href='https://facebook.com/radioaguadevidaok'
-                        isExternal
-                        _hover={{ color: 'gray.300' }}
-                        transitionDuration='400ms'
-                    >
-                        <BsFacebook color='gray' size='20px' />
-                    </Link>
-                    <Link
-                        href='https://instagram.com/radioaguadevidaok'
-                        isExternal
-                        _hover={{ color: 'gray.300' }}
-                        transitionDuration='400ms'
-                    >
-                        <BsInstagram color='gray' size='20px' />
-                    </Link>
+                    <Badge cursor='pointer' variant='outline' colorScheme='red' fontSize='0.9em'>
+                        ESCUCHAR EN VIVO
+                    </Badge>
                 </Box>
             </Stack>
 
