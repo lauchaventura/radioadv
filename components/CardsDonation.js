@@ -17,7 +17,7 @@ const CardsDonation = () => {
                         boxSize='250px'
                     />
                     <Box>
-                        <Text fontWeight='900'>Donar en territorio nacional</Text>
+                        <Text fontWeight='600'>Donar en territorio nacional</Text>
                         <Text >Podes colaborar con nuestros servicios desde cualquier parte del pais(AR)</Text>
                         <Image
                             cursor='pointer'
@@ -37,7 +37,7 @@ const CardsDonation = () => {
                         objectFit='cover'
                         boxSize='250px'
                     />
-                    <Text fontWeight='bold'>Donar en territorio Nacional</Text>
+                    <Text fontWeight='semibold'>Donar en territorio Nacional</Text>
                     <Text >Podes colaborar con nuestros servicios desde cualquier parte del pais(AR)</Text>
                     <Image
                         cursor='pointer'
@@ -55,7 +55,7 @@ const CardsDonation = () => {
                         objectFit='cover'
                         boxSize='250px'
                     />
-                    <Text fontWeight='bold'>Donar telefonicamente</Text>
+                    <Text fontWeight='semibold'>Donar telefonicamente</Text>
                     <Text>Desde cualquier parte del mundo</Text>
                     <Box p='4'>
                         <Text >En Argentina: 2984134931

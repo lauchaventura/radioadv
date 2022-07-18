@@ -8,7 +8,7 @@ const Map = () => {
             justify="space-between"
             wrap="wrap"
             padding={3}
-            color="black"
+            color="#1A202C"
 
         >
             <SimpleGrid alignItems='center' columns={[1, 2]} spacing={5} mt={5}>
@@ -22,7 +22,7 @@ const Map = () => {
                     <Text>
                         Nuestros estudios ubicados en General Roca, Rio Negro
                     </Text>
-                    <Text fontWeight='bold' fontSize='2xl'>
+                    <Text fontWeight='semibold' fontSize='2xl'>
                         #Conectados con La Realidad
                     </Text>
                     <Link isExternal href='https://g.page/radioaguadevidaok?share' >

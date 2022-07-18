@@ -25,7 +25,7 @@ const Header = (props) => {
             justify="space-between"
             wrap="wrap"
             padding={2}
-            boxShadow='xl'
+            
             {...props}
             backgroundColor='transparent'
             background='transparent'
@@ -64,7 +64,7 @@ const Header = (props) => {
                     <Text
                         cursor='pointer'
                         color='#1d3557'
-                        fontWeight='bold'
+                        fontWeight='semibold'
                         _hover={{ color: 'gray.300' }}
                         transitionDuration='400ms'
                     >
@@ -77,7 +77,7 @@ const Header = (props) => {
                         cursor='pointer'
                         color='1d3557'
                         _hover={{ color: 'gray.300' }}
-                        fontWeight='bold'
+                        fontWeight='semibold'
                         transitionDuration='400ms'
 
                     >
@@ -90,17 +90,17 @@ const Header = (props) => {
                         color='#1d3557'
                         _hover={{ color: 'gray.300' }}
                         transitionDuration='400ms'
-                        fontWeight='bold'
+                        fontWeight='semibold'
                     >
                         DONAR
                     </Text>
                 </div>
-                <div onClick={() => router.push('/programs')}>
+                <div onClick={() => router.push('/projects')}>
                     <Text
                         cursor='pointer'
                         color='#1d3557'
                         _hover={{ color: 'gray.300' }}
-                        fontWeight='bold'
+                        fontWeight='semibold'
                         transitionDuration='400ms'
                     >
                         NUESTROS PROYECTOS
@@ -117,7 +117,7 @@ const Header = (props) => {
                     display='flex'
                     margin='9px'
                 >
-                    <Badge cursor='pointer' variant='outline' colorScheme='red' fontSize='0.9em'>
+                    <Badge cursor='pointer' variant='outline' colorScheme='red' fontSize='0.8em'>
                         ESCUCHAR EN VIVO
                     </Badge>
                 </Box>
