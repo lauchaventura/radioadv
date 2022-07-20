@@ -8,10 +8,6 @@ const axios = require('axios')
 
 
 const Programs = () => {
-const [name, setName] = useState('')
-const [description, setDescription] = useState('')
-const [horary, setHorary] = useState('')
-const [image, setImage] = useState('')
 const[APIdata, setAPIdata] = useState([])
 
 useEffect(() => {
@@ -46,9 +42,9 @@ useEffect(() => {
                     <Grid p={3}gridGap={12} templateColumns="repeat(auto-fill, minmax(240px, 1fr))" >
                         {APIdata.map((data) => {
                             return(
-                                <Stack spacing={3}>
+                                <Stack spacing={3} key={data.id}>
                                                            
-    <Stack borderRadius='md'   backgroundColor="gray.50"   >
+    <Stack borderRadius='md'   backgroundColor="gray.50"  key={data.id}  >
       <Box p={4}>
         <Text fontSize='lg' fontWeight='bold'>
             {data.name}
