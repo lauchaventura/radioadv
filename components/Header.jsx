@@ -32,13 +32,19 @@ const Header = (props) => {
         >
             <Flex align="center" mr={5} ml={9}>
                 <div onClick={() => router.push('/')} >
-                    <Box
-                        cursor='pointer'    
+                    <Box   
                         w='23'
-                        h='16'
+                       p={1}
                     >
-                        <Image 
- src='https://res.cloudinary.com/dsjas6fvz/image/upload/v1658285646/Radio%20Agua%20de%20Vida/conectados_con_larealidad_xmbluu.png'/>
+                         <Heading
+                        cursor='pointer'
+                        fontSize='25px'
+                        letterSpacing={"tighter"}
+                        color='#1d3557'
+                       
+                    >
+                        Radio Agua de Vida
+                    </Heading>
                     </Box>             
                 </div>
             </Flex>

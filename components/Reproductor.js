@@ -9,7 +9,7 @@ import { GrPlay, GrVolumeMute, GrVolume, GrPause } from 'react-icons/gr';
 const Reproductor = () => {
     return (
 
-        <SimpleGrid  columns={[1, 2]} alignItems='center' justify='center' padding='20px' bg='#457b9d'>
+        <SimpleGrid mt={4}  columns={[1, 2]} alignItems='center' justify='center' padding='15px' bg='#457b9d'>
             <Box alignItems='center' align='center' p={2}>
                 <AudioPlayer
                     src="https://serverssl.deradios.stream/8354/stream*540.stream"
@@ -18,7 +18,7 @@ const Reproductor = () => {
                         backgroundImage: 'url("https://mdn.mozillademos.org/files/6457/mdn_logo_only_color.png")',
                         color: 'black',
                         width: '70%',
-                        borderRadius: '20px',
+                        borderRadius: '10px',
                         align: 'center',
 
                     }}
@@ -34,7 +34,7 @@ const Reproductor = () => {
                 />
             </Box>
             <Box>
-                <Text color='white' align='center' p={5}>
+                <Text color='white' align='center' p={4}>
                     Escuchanos desde cualquier parte del mundo vayas donde vayas, estes donde estes
                 </Text>
             </Box>

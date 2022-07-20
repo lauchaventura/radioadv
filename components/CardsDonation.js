@@ -3,14 +3,24 @@ import { Box, Image, Text, Button, Link, SimpleGrid, chakra, Flex, Container, He
 
 const CardsDonation = () => {
     return (
-        <Container maxW='container.xl'  centerContent>
-            <SimpleGrid mr={10} columns={[1, 2, 3]} align='center' alignItems='center' color='#384967' gap={[-20, -10, 0]} display={["inline-block", 'inline-block', 'grid']} >
+       <Container
+       maxW='container.xl'
+            align="center"
+            justify="space-between"
+            wrap="wrap"
+            padding={3}
+            color="#1A202C"
+            w='100%'
+            centerContent
+       >
+
+            <SimpleGrid spacing={[4,8,12]} columns={[1, 2, 3]}  align='center' alignItems='center' color='#384967'  >
                 <Box
-                    m={20}
+                   
                     maxW='sm'
                     borderRadius='md'
                     boxShadow='2xl'
-                    w={[290, 500, 300]}
+                    w={[330, 290, 300]}
                 >
                     <Box bg='#a8dadc'>
                     <Image src='https://res.cloudinary.com/dsjas6fvz/image/upload/v1653339183/Radio%20Agua%20de%20Vida/1_fvo0wm.png'
@@ -31,8 +41,7 @@ const CardsDonation = () => {
                 </Box>
 
                 <Box
-                w={[290, 500, 300]}
-                m={20}
+                w={[330, 290, 300]}
                     maxW='md'
                     boxShadow='2xl'
                     borderRadius='md'
@@ -58,9 +67,8 @@ const CardsDonation = () => {
                 <Box
                     maxW='md'
                     boxShadow='2xl'
-                    m={20}
-                    borderRadius='md'
-                    w={[290, 500, 300]}
+                   
+                    w={[330, 290, 300]}
                 >
                     <Box bg='#1d3557'>
                     <Image src='https://res.cloudinary.com/dsjas6fvz/image/upload/v1653339183/Radio%20Agua%20de%20Vida/3_pvqwyk.png'
@@ -84,8 +92,7 @@ const CardsDonation = () => {
 
                 </Box>
             </SimpleGrid>
-
-        </Container>
+            </Container>
     );
 };
 
