@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import { Avatar,Stack, useColorModeValue, SimpleGrid, Text, Box, Container } from "@chakra-ui/react";
+import { Avatar,Stack, useColorModeValue, SimpleGrid, Text, Box, Container, Image } from "@chakra-ui/react";
 import Header from "../components/Header";
 const axios = require('axios')
 
@@ -14,12 +14,22 @@ const Projects = () => {
             </Head>
                 <Header />
                 
-                <SimpleGrid height='90vh' columns={[1,2]} mt={9} alignItems='center' align='center'>
-                    <Box  fontWeight='900' fontSize='80' lineHeight='0.8'>
+                <SimpleGrid  columns={[1,2]} p={8} alignItems='center' align='center'>
+                    <Box  fontWeight='900' fontSize='82' lineHeight='0.9'>
                         <Text align='start' m={10} >Estamos ayudando desde cualquier parte del mundo</Text>
                     </Box>
+<Box>
+    <Image boxSize='500px' src='https://res.cloudinary.com/dsjas6fvz/image/upload/v1653580620/Radio%20Agua%20de%20Vida/proyectos_x4eids.png' />
+</Box>
 
                 </SimpleGrid>  
+                <Box>
+    <Box bg='gray.200'>
+        <Text>
+            HOLA 
+        </Text>
+    </Box>
+</Box>
                 <Stack
       bg={useColorModeValue('gray.50', 'gray.800')}
       py={16}
@@ -36,7 +46,7 @@ const Projects = () => {
       <Box textAlign={'center'}>
         <Avatar
           src={
-            'https://res.cloudinary.com/dsjas6fvz/image/upload/v1658171215/Radio%20Agua%20de%20Vida/IMG_7327_qorg6b.jpg'
+            'https://res.cloudinary.com/dsjas6fvz/image/upload/c_scale,w_1184/v1658171215/Radio%20Agua%20de%20Vida/IMG_7327_qorg6b.jpg'
           }
           alt={'Alejandro Cononahuel'}
           mb={2}

@@ -9,7 +9,7 @@ import { GrPlay, GrVolumeMute, GrVolume, GrPause } from 'react-icons/gr';
 const Reproductor = () => {
     return (
 
-        <SimpleGrid mt={5} columns={[1, 2]} alignItems='center' justify='center' padding='20px' bg='#457b9d'>
+        <SimpleGrid  columns={[1, 2]} alignItems='center' justify='center' padding='20px' bg='#457b9d'>
             <Box alignItems='center' align='center' p={2}>
                 <AudioPlayer
                     src="https://serverssl.deradios.stream/8354/stream*540.stream"
