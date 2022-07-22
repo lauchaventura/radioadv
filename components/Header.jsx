@@ -1,6 +1,6 @@
 import React from "react";
 import { useRouter } from "next/router"
-import { BsFacebook, BsYoutube, BsInstagram } from 'react-icons/bs';
+import { motion } from "framer-motion";
 import {
     Box,
     Stack,
@@ -19,13 +19,27 @@ const Header = (props) => {
     const handleToggle = () => (isOpen ? onClose() : onOpen());
     const router = useRouter();
     return (
+        <motion.div initial='hidden' animate='visible'
+        variants={{
+            hidden:{
+scale:.9,
+opacity:0
+            },
+            visible:{
+                scale:1,
+                opacity: 1,
+                
+            }
+        }}
+       
+        >
         <Flex
             as="nav"
             align="center"
             justify="space-between"
             wrap="wrap"
             padding={2}
-            position='fixed'
+            
             width='100%'
             {...props}
             bg='white'
@@ -67,9 +81,9 @@ const Header = (props) => {
                     <Text
                         cursor='pointer'
                         color='#1d3557'
-                        fontWeight='medium'
+                        fontWeight='ligth'
                         transitionDuration='100ms'
-                        _hover={{ fontWeight: 'semibold' }}
+                        _hover={{ color: '#e63946' }}
                     >
                         Programas
                     </Text>
@@ -79,8 +93,8 @@ const Header = (props) => {
                     <Text
                         cursor='pointer'
                         color='1d3557'
-                        _hover={{ fontWeight: 'semibold' }}
-                        fontWeight='medium'
+                        _hover={{ color: '#e63946' }}
+                        fontWeight='ligth'
                         transitionDuration='100ms'
 
                     >
@@ -91,9 +105,9 @@ const Header = (props) => {
                     <Text
                         cursor='pointer'
                         color='#1d3557'
-                        _hover={{ fontWeight: 'semibold' }}
+                        _hover={{ color: '#e63946' }}
                         transitionDuration='100ms'
-                        fontWeight='medium'
+                        fontWeight='ligth'
                     >
                         DONAR
                     </Text>
@@ -102,9 +116,9 @@ const Header = (props) => {
                     <Text
                         cursor='pointer'
                         color='#1d3557'
-                        _hover={{ fontWeight: 'semibold' }}
-                        fontWeight='medium'
-                        transitionDuration='100ms'
+                        _hover={{ color: '#e63946' }}
+                        fontWeight='ligth'
+                        transitionDuration='300ms'
                     >
                         NUESTROS PROYECTOS
                     </Text>
@@ -128,6 +142,7 @@ const Header = (props) => {
 
 
         </Flex >
+        </motion.div>
     );
 };
 

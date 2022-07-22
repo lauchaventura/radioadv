@@ -21,7 +21,7 @@ const Map = () => {
   />
 </AspectRatio>
                 </Box>
-                <Box  >
+                <Box mt={5} >
                     <Text>
                         Nuestros estudios ubicados en General Roca, Rio Negro
                     </Text>

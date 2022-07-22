@@ -24,22 +24,22 @@ useEffect(() => {
                 <title>Radio Agua de Vida | Programas</title>
             </Head>
                 <Header />
-                <Container maxW='container.xl' pt={20} >
+                <Container maxW='container.xl' pt={6} >
                     <Box
-                        mb={4}
-                        p={3}
+                    mb={9} 
                         textAlign="center"
+                      
                     >
                         <Badge
                             variant="solid"
-                            colorScheme='gray'
+                            bg='#e63946'
                             fontSize='30px'
                             align='center'
                         >
-                            Programación
+                            Te acompañamos las 24 horas!
                         </Badge>
                     </Box>
-                    <Grid p={3}gridGap={12} templateColumns="repeat(auto-fill, minmax(240px, 1fr))" >
+                    <Grid  p={3}gridGap={12} templateColumns="repeat(auto-fill, minmax(240px, 1fr))" >
                         {APIdata.map((data) => {
                             return(
                                 <Stack spacing={3} key={data.id}>
@@ -53,7 +53,7 @@ useEffect(() => {
             {data.description}
         </Text>
         <Text fontSize='lg' fontWeight='semibold' mt={2}>
-        {data.horary}
+         {data.days} {data.horary}
         </Text>
         </Box>
         <Box width='100%'  >

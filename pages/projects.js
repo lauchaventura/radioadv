@@ -25,9 +25,7 @@ const Projects = () => {
                 </SimpleGrid>  
                 <Box>
     <Box bg='gray.200'>
-        <Text>
-            HOLA 
-        </Text>
+        
     </Box>
 </Box>
                 <Stack

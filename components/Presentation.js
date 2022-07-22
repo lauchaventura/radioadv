@@ -1,36 +1,61 @@
-import { Box, chakra, SimpleGrid, Text, Container, Stack, Button, Link, Heading, Code, Image } from "@chakra-ui/react";
+import { Box, chakra, SimpleGrid, Text, AspectRatio, Link, Button , Image, Container } from "@chakra-ui/react";
 import { GrMapLocation, GrPlay } from 'react-icons/gr';
 import React from "react";
 import Reproductor from './Reproductor'
 import styles from '../styles/AudioPlayer.module.scss'
-
+import { motion } from "framer-motion";
 const Presentation = () => {
     return (
+        <motion.div initial='hidden' animate='visible'
+        variants={{
+            hidden:{
+scale:.9,
+opacity:0
+            },
+            visible:{
+                scale:1,
+                opacity: 1,
+            }
+        }}
+       
+        >
+        <Container maxW='container.xl'
+        align="center"
+        wrap="wrap"
+p={10}
+centerContent
+        color="#1A202C"
 
-
- <SimpleGrid
-            alignItems='center'
-            columns={[1,2]}
-            paddingTop={14}
-            align='center'
-            spacing={9}
-            height='99vh'
-             >
-                <Box mt={10} >
-                <Text p={[ 1,3,5]} ml={[ 5,5,10]} mr={[2,5,10]} fontWeight='900' fontSize={[60, 70, 90]} lineHeight={0.9} color='#1A202C' align='start'
-            >Somos distintos a los demas...
-            </Text>
-            <Text align='start'  p={[ 1,3,5]} ml={[ 5,5,10]} mr={[2,5,10]}>
+    >
+        <SimpleGrid alignItems='center' columns={[1, 2]}   spacing={10}>
+         
+            <Box align='start' justifyContent='center' >
+            <Text lineHeight={0.9}  Textalign='start' fontWeight='900' fontSize={[50, 60, 90]}>
+                    Somos distintos a los demas 
+                </Text>
+                <Text Textalign='start' mt={5}>
                 Somos Agua de Vida un medio audiovisual en donde encontraras lo que buscas. Estamos para vos y para todo los que nos escuchan.
-            </Text>
-                </Box>
+                </Text>
+                
 
-            <Box w={[200,350,480]} mr={4}   >
-            <Image align='center' justify='center' src='https://res.cloudinary.com/dsjas6fvz/image/upload/v1658190582/Radio%20Agua%20de%20Vida/TODOS_dgrpce.png'/>
             </Box>
+            <Box align='center'
+            maxW={500}>
+             <Image 
+             align='center' 
+             justify='center' 
+             src='https://res.cloudinary.com/dsjas6fvz/image/upload/v1658190582/Radio%20Agua%20de%20Vida/TODOS_dgrpce.png' />
 
+
+            </Box>
         </SimpleGrid>
 
+    </Container >
+    </motion.div>
+      
+
+
+  
     )
         ;
 };
