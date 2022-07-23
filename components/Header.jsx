@@ -44,7 +44,7 @@ opacity:0
             {...props}
             bg='white'
         >
-            <Flex align="center" mr={5} ml={9}>
+            <Flex align="center" >
                 <div onClick={() => router.push('/')} >
                     <Box   
                         w='23'
@@ -69,7 +69,7 @@ opacity:0
             </Box>
 
             <Stack
-                mr={16}
+                mr={9}
                 direction={{ base: "column", md: "row", }}
                 display={{ base: isOpen ? "block" : "none", md: "flex" }}
                 width={{ base: "full", md: "auto" }}
@@ -82,7 +82,8 @@ opacity:0
                         cursor='pointer'
                         color='#1d3557'
                         fontWeight='ligth'
-                        transitionDuration='100ms'
+                        fontSize={15}
+                        transitionDuration='400ms'
                         _hover={{ color: '#e63946' }}
                     >
                         Programas
@@ -95,7 +96,8 @@ opacity:0
                         color='1d3557'
                         _hover={{ color: '#e63946' }}
                         fontWeight='ligth'
-                        transitionDuration='100ms'
+                        fontSize={15}
+                        transitionDuration='400ms'
 
                     >
                         Grilla
@@ -106,8 +108,9 @@ opacity:0
                         cursor='pointer'
                         color='#1d3557'
                         _hover={{ color: '#e63946' }}
-                        transitionDuration='100ms'
+                        transitionDuration='400ms'
                         fontWeight='ligth'
+                        fontSize={15}
                     >
                         DONAR
                     </Text>
@@ -117,28 +120,14 @@ opacity:0
                         cursor='pointer'
                         color='#1d3557'
                         _hover={{ color: '#e63946' }}
-                        fontWeight='ligth'
-                        transitionDuration='300ms'
+                        fontWeight='semibold'
+                        transitionDuration='500ms'
+                        fontSize={15}
                     >
                         NUESTROS PROYECTOS
                     </Text>
                 </div>
             </Stack>
-
-
-            {/* <Stack
-                display={{ base: isOpen ? "block" : "none", md: "block" }}
-                mt={{ base: 4, md: 0 }}
-            >
-                <Box
-                    margin='9px'
-                    mr='9'
-                >
-                    <Badge cursor='pointer' variant='outline' colorScheme='red' fontSize='0.8em' fontWeight='semibold'>
-                        ESCUCHAR EN VIVO
-                    </Badge>
-                </Box>
-            </Stack> */}
 
 
         </Flex >

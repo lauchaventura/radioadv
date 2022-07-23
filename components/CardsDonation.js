@@ -17,10 +17,10 @@ const CardsDonation = () => {
             <SimpleGrid spacing={[4,8,12]} columns={[1, 2, 3]}  align='center' alignItems='center' color='#384967'  >
                 <Box
                    
-                    maxW='sm'
+                  
                     borderRadius='md'
                     boxShadow='2xl'
-                    w={[330, 290, 300]}
+                    w={[230,270, 260, 270]}
                 >
                     <Box bg='#a8dadc'>
                     <Image src='https://res.cloudinary.com/dsjas6fvz/image/upload/v1653339183/Radio%20Agua%20de%20Vida/1_fvo0wm.png'
@@ -41,8 +41,8 @@ const CardsDonation = () => {
                 </Box>
 
                 <Box
-                w={[330, 290, 300]}
-                    maxW='md'
+                w={[230,270, 260, 270]}
+                    
                     boxShadow='2xl'
                     borderRadius='md'
                 >
@@ -65,10 +65,10 @@ const CardsDonation = () => {
                   
                 </Box>
                 <Box
-                    maxW='md'
+                 
                     boxShadow='2xl'
                    
-                    w={[330, 290, 300]}
+                    w={[230,270, 260, 270]}
                 >
                     <Box bg='#1d3557'>
                     <Image src='https://res.cloudinary.com/dsjas6fvz/image/upload/v1653339183/Radio%20Agua%20de%20Vida/3_pvqwyk.png'
@@ -79,7 +79,7 @@ const CardsDonation = () => {
                     <Box p={3}>
                     <Text  fontWeight='semibold'>Donar telefonicamente</Text>
                     <Text>Desde cualquier parte del mundo</Text>
-                    <Box p='5'>
+                    <Box p='3'>
                         <Text >En Argentina: 2984134931
                         </Text>
                         <Text>En el Exterior: (+549) 2984134931</Text>
