@@ -1,45 +1,16 @@
 import React from "react";
-import { useEffect, useState } from "react";
-import { ChakraProvider, Heading } from "@chakra-ui/react";
+import {  Heading } from "@chakra-ui/react";
 import {
-    Box,
-    Tabs,
-    TabList,
-    TabPanels,
-    Tab,
-    TabPanel,
-    Container,
-    Badge,
-    Text,
-    css,
-    useDisclosure
-
+    Container
 } from "@chakra-ui/react";
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import theme from '../styles/theme'
 import '@fontsource/montserrat/400.css'
 import '@fontsource/open-sans/700.css'
 import Head from "next/head";
 
-const axios = require('axios')
-
-
 const grilla = () => {
-    const[APIdata, setAPIdata] = useState([])
-const [isLoading, setIsLoading] = useState(true);
-useEffect(() => {
-    setTimeout(() =>{
-  setIsLoading(false)
-    },4000)
-  }, [])
-
-useEffect(() => {
-  axios.get(`https://sheetsu.com/apis/v1.0su/6b5ab495d7ff `)
-  .then((incomingData) => {
-    setAPIdata(incomingData.data)
-  })
-}, [])
+ 
     return (
         <>
             <Head>
