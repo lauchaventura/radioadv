@@ -1,6 +1,6 @@
 import React from "react";
-import { useRouter } from "next/router"
-import { ChakraProvider } from "@chakra-ui/react";
+import { useEffect, useState } from "react";
+import { ChakraProvider, Heading } from "@chakra-ui/react";
 import {
     Box,
     Tabs,
@@ -22,16 +22,32 @@ import '@fontsource/montserrat/400.css'
 import '@fontsource/open-sans/700.css'
 import Head from "next/head";
 
+const axios = require('axios')
+
+
 const grilla = () => {
+    const[APIdata, setAPIdata] = useState([])
+const [isLoading, setIsLoading] = useState(true);
+useEffect(() => {
+    setTimeout(() =>{
+  setIsLoading(false)
+    },4000)
+  }, [])
+
+useEffect(() => {
+  axios.get(`https://sheetsu.com/apis/v1.0su/6b5ab495d7ff `)
+  .then((incomingData) => {
+    setAPIdata(incomingData.data)
+  })
+}, [])
     return (
         <>
             <Head>
                 <title>Radio Agua de Vida | Grilla</title>
             </Head>
-            <ChakraProvider resetCSS theme={theme} >
                 <Header />
-                <Container maxW='xl' >
-                    <Box
+                <Container maxW='container.xl' centerContent >
+                    {/* <Box
                         mb={4}
                         p={3}
                         textAlign="center"
@@ -44,12 +60,12 @@ const grilla = () => {
                         >
                             Programación
                         </Badge>
-                    </Box>
-                    <Tabs orientation='vertical' borderColor='transparent' size='lg'>
+                    </Box> */}
+                    {/* <Tabs orientation='vertical' borderColor='transparent' size='lg' key={APIdata.id}>
                         <TabList
 
                         >
-                            <Tab _selected={{ color: 'white', bg: 'blue.500' }}>LUNES</Tab>
+                            <Tab  _selected={{ color: 'white', bg: 'blue.500' }}>LUNES</Tab>
                             <Tab _selected={{ color: 'white', bg: 'green.400' }}>MARTES</Tab>
                             <Tab _selected={{ color: 'white', bg: 'green.400' }}>MIERCOLES</Tab>
                             <Tab _selected={{ color: 'white', bg: 'green.400' }}>JUEVES</Tab>
@@ -57,51 +73,37 @@ const grilla = () => {
                             <Tab _selected={{ color: 'white', bg: 'green.400' }}>SABADO</Tab>
                             <Tab _selected={{ color: 'white', bg: 'green.400' }}>DOMINGO</Tab>
                         </TabList>
+                        {APIdata.map(data =>(
                         <TabPanels>
                             <TabPanel bg='red.100' height='100%' >
-                                <Text fontSize='lg' fontWeight='bold'>
-                                    Quien Ira - 8AM
-                                    <Badge mb={3} ml='1' variant='outline' fontSize='0.5em' colorScheme='red'>
-                                        NUEVO
-                                    </Badge>
-                                </Text>
-                                <Text fontSize='lg' fontWeight='bold'>
-                                    Un Tiempo Para Todos - 9:30
-                                </Text>
-                                <Text fontSize='lg' fontWeight='bold'>
-                                    En Linea - 12 PM
-                                </Text>
-                                <Text fontSize='lg' fontWeight='bold'>
-                                    Mujeres de Fe - 17PM
-                                </Text>
-                                <Text fontSize='lg' fontWeight='bold'>
-                                    Herederos de Victoria - 18PM
-                                </Text>
-                                <Text fontSize='lg' fontWeight='bold'>
-                                    Entre Lineas - 20PM
-                                </Text>
-
+                             <p>{data.monday}</p>
                             </TabPanel>
                             <TabPanel>
-                                <p>two!</p>
+                            <p>{data.tuesday}</p>
                             </TabPanel>
                             <TabPanel>
-                                <p>two!</p>
+                            <p>{data.wednesday}</p>
                             </TabPanel>
                             <TabPanel>
-                                <p>asdasd</p>
+                            <p>{data.thursday}</p>
                             </TabPanel>
                             <TabPanel>
-                                <p>asdasd</p>
+                            <p>{data.friday}</p>
                             </TabPanel>
                             <TabPanel>
-                                <p>two!</p>
+                               
+                            <p>{data.friday}</p>
+                            <p>{data.drivers}</p>
+                            <p>{data.horary}</p>
                             </TabPanel>
                         </TabPanels>
-                    </Tabs>
+                         ))}
+                    </Tabs> */}
+                   <Heading align='center' fontSize={[40, 40, 60, 90]} p={[10,10,15,20]}>
+                    Pagina proximamente disponible!
+                   </Heading>
                     <Footer />
                 </Container>
-            </ChakraProvider>
 
         </>
     )

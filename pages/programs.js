@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import Head from "next/head";
-import { motion, router } from "framer-motion";
+import { motion, router, AnimatePresence } from "framer-motion";
 import { Container, Box,Badge, Grid, Text, SkeletonText, SkeletonCircle, Tab, TabPanel, Image, SimpleGrid, Stack } from "@chakra-ui/react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -27,7 +27,7 @@ useEffect(() => {
 
 const loader = () => {
 return (
-    <div>
+    <>
     <Head>
         <title>Radio Agua de Vida | Programas</title>
     </Head>
@@ -47,7 +47,7 @@ return (
             </Box>
             <Grid  p={3}gridGap={12} templateColumns="repeat(auto-fill, minmax(240px, 1fr))" >
                 {APIdata.map(data =>(
-                        <Stack spacing={3} >
+                        <Stack spacing={3} key={data.id}>
                                                    
 <Stack borderRadius='md'   backgroundColor="gray.50"   >
 <Box p={4}>
@@ -81,7 +81,7 @@ return (
          
             <Footer />
         </Container>
-</div>
+</>
 )
 }
 if(isLoading ){

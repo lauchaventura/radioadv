@@ -19,20 +19,7 @@ const Header = (props) => {
     const handleToggle = () => (isOpen ? onClose() : onOpen());
     const router = useRouter();
     return (
-        <motion.div initial='hidden' animate='visible'
-        variants={{
-            hidden:{
-scale:.9,
-opacity:0
-            },
-            visible:{
-                scale:1,
-                opacity: 1,
-                
-            }
-        }}
-       
-        >
+        <>
         <Flex
             as="nav"
             align="center"
@@ -103,7 +90,7 @@ opacity:0
                         Grilla
                     </Text>
                 </div>
-                <div>
+                {/* <div>
                     <Text
                         cursor='pointer'
                         color='#1d3557'
@@ -114,7 +101,7 @@ opacity:0
                     >
                         DONAR
                     </Text>
-                </div>
+                </div> */}
                 <div onClick={() => router.push('/projects')}>
                     <Text
                         cursor='pointer'
@@ -131,7 +118,7 @@ opacity:0
 
 
         </Flex >
-        </motion.div>
+        </>
     );
 };
 

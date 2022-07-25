@@ -29,7 +29,7 @@ centerContent
     >
         <SimpleGrid alignItems='center' columns={[1, 2]}   spacing={10}>
          
-            <Box align='start' justifyContent='center' >
+            <Box align='start' justifyContent='center' mb={5} >
             <Text lineHeight={0.9}  Textalign='start' fontWeight='900' fontSize={[50, 60, 90]}>
                     Somos distintos a los demas 
                 </Text>
@@ -49,7 +49,11 @@ centerContent
 
             </Box>
         </SimpleGrid>
-
+<Box w='55px' position='fixed' borderRadius='full' bottom='50px' right='30px' zIndex='100' boxShadow='lg'>
+    <Link outline='none'href='https://api.whatsapp.com/send?phone=2984134931' isExternal>
+        <Image  src='https://res.cloudinary.com/dsjas6fvz/image/upload/v1658713033/Radio%20Agua%20de%20Vida/pngwing.com_dlalmd.png' />
+    </Link>
+</Box>
     </Container >
     </motion.div>
       
