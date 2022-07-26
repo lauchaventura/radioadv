@@ -1,26 +1,27 @@
 import React from "react";
-import { Box, Image, Text, Button, Link, SimpleGrid, chakra, Flex, Container, Heading, Stack } from "@chakra-ui/react";
+import { Box, Image, Text, Grid, Container, Heading, Stack } from "@chakra-ui/react";
 
 const CardsDonation = () => {
     return (
        <Container
        maxW='container.xl'
-            align="center"
-            justify="space-between"
-            wrap="wrap"
-            padding={3}
-            color="#1A202C"
-            w='100%'
-            centerContent
+    
        >
 
-            <SimpleGrid spacing={[4,8,12]} columns={[1, 2, 3]}  align='center' alignItems='center' color='#384967'  >
+            <Grid align='center' mb={6}  p={3}gridGap={7} templateColumns="repeat(auto-fill, minmax(240px, 1fr))" >
+            {/* <Box  justifyContent='center' >
+                    
+                    <Box alignItems='center' align='start' >
+                        <Text fontSize='45' lineHeight={0.82}  fontWeight='900'>Tu ayuda nos impulsa </Text>
+                       
+                        <Text fontSize='20'   >Nuestros proyectos son para desarrolar el ambito social </Text>
+                    </Box>
+                </Box> */}
+               
                 <Box
-                   
-                  
                     borderRadius='md'
                     boxShadow='2xl'
-                    w={[230,270, 260, 270]}
+                 
                 >
                     <Box bg='#a8dadc'>
                     <Image src='https://res.cloudinary.com/dsjas6fvz/image/upload/v1653339183/Radio%20Agua%20de%20Vida/1_fvo0wm.png'
@@ -40,9 +41,7 @@ const CardsDonation = () => {
                     </Box>
                 </Box>
 
-                <Box
-                w={[230,270, 260, 270]}
-                    
+                <Box  
                     boxShadow='2xl'
                     borderRadius='md'
                 >
@@ -65,10 +64,7 @@ const CardsDonation = () => {
                   
                 </Box>
                 <Box
-                 
                     boxShadow='2xl'
-                   
-                    w={[230,270, 260, 270]}
                 >
                     <Box bg='#1d3557'>
                     <Image src='https://res.cloudinary.com/dsjas6fvz/image/upload/v1653339183/Radio%20Agua%20de%20Vida/3_pvqwyk.png'
@@ -84,14 +80,33 @@ const CardsDonation = () => {
                         </Text>
                         <Text>En el Exterior: (+549) 2984134931</Text>
                     </Box>
-                    
-                    
-                    </Box>
-
-
-
+                
+                 </Box>
+                 
                 </Box>
-            </SimpleGrid>
+                <Box
+                    boxShadow='2xl'
+                >
+                    <Box bg='#e63946'>
+                    <Image src='https://res.cloudinary.com/dsjas6fvz/image/upload/v1658857571/Radio%20Agua%20de%20Vida/avatar_gv8nca.png'
+                        objectFit='cover'
+                        boxSize='200px'
+                    />
+                    </Box>
+                    <Box p={3}>
+                    <Text  fontWeight='semibold'>Donar presencialmente</Text>
+                    <Text>En General Roca, Rio Negro</Text>
+                    <Box p='3'>
+                        <Text mt={3}>Nuestros estudios centrales
+                        </Text>
+                        <Text mt={3}>Llamar previamente: 2984134931</Text>
+                    </Box>
+                
+                 </Box>
+                 
+                </Box>
+                
+            </Grid>
             </Container>
     );
 };

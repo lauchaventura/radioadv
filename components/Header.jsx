@@ -52,7 +52,7 @@ const Header = (props) => {
            
 
             <Box display={{ base: "block", md: "none" }} onClick={handleToggle}>
-                <HamburgerIcon  transitionDuration='0.5s' _hover={{ onClick: '0.5s' }} />
+                <HamburgerIcon  />
             </Box>
 
             <Stack

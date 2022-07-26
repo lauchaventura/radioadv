@@ -104,26 +104,26 @@ else{
     }}>
             <Container maxW='container.xl' pt={6} >
                 <Box
-                mb={9} 
+                mb={2} 
                     textAlign="center"
                   align='center'
                 >
                     <Badge
                         variant="solid"
                         bg='#e63946'
-                        fontSize={[14,17, 20, 25]}
+                        fontSize={[16,17, 20, 25]}
                         align='center'
                     >
                         Te acompañamos las 24 horas!
                     </Badge>
-                    <Box mt={4}>
+                    <Box >
                     </Box>
                     
                 </Box>
-                <Grid  p={3}gridGap={12} templateColumns="repeat(auto-fill, minmax(240px, 1fr))" >
+                <Grid mb={6}  p={3}gridGap={12} templateColumns="repeat(auto-fill, minmax(240px, 1fr))" >
                     {APIdata.map((data) => {
                         return(
-                            <Stack spacing={3} key={data.id}>
+                            <Stack spacing={3} key={data.id} >
                                                        
     <Stack borderRadius='md'   backgroundColor="gray.50"  key={data.id}  >
     <Box p={4}>
