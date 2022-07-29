@@ -45,7 +45,13 @@ export const Mailer = () => {
 
   return (
     <Container maxW='container.xl' centerContent>
-      <SimpleGrid alignItems='center' columns={[1, 2]} mt={4} fontSize='15px'>
+      <SimpleGrid
+        alignItems='center'
+        columns={[1, 2]}
+        mt={4}
+        fontSize='15px'
+        height='100vh'
+      >
         <Box>
           <Text
             p={6}
@@ -60,7 +66,7 @@ export const Mailer = () => {
             Queres colaborar con nuestros servicios? No dudes en escribirnos.
           </Text>
         </Box>
-        <Box boxShadow='lg' p={5} maxW='500px' maxH='488px'>
+        <Box boxShadow='lg' p={5} maxW='500px' maxH='488px' height='100vh'>
           <form ref={form} onSubmit={sendEmail}>
             <Text align='center' fontWeight='900' size='md' color='#1D3557'>
               CONTACTATE CON NOSOTROS
@@ -85,6 +91,7 @@ export const Mailer = () => {
                 {""} +54 9 2984134931
               </Link>
             </Text>
+            <Box></Box>
             <Text mt={3} fontWeight='800'>
               Nombre
             </Text>
