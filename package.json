@@ -11,10 +11,12 @@
   "dependencies": {
     "@chakra-ui/icons": "^1.1.7",
     "@chakra-ui/react": "^1.8.6",
+    "@emailjs/browser": "^3.6.2",
     "@emotion/react": "^11.8.1",
     "@emotion/styled": "^11.8.1",
     "@fontsource/montserrat": "^4.5.5",
-    "@fontsource/open-sans": "^4.5.5",
+    "@fontsource/open-sans": "^4.5.10",
+    "@fontsource/quicksand": "^4.5.9",
     "axios": "^0.26.1",
     "framer-motion": "^6.5.1",
     "next": "12.1.0",

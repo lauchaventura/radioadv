@@ -22,15 +22,15 @@ opacity:0
         <Container maxW='container.xl'
         align="center"
         wrap="wrap"
-h='90vh'
+
 centerContent
         color="#1A202C"
 
     >
-        <SimpleGrid alignItems='center' columns={[1, 2]}   spacing={1}>
+        <SimpleGrid alignItems='center' columns={[1, 2]}   >
          
             <Box align='start' justifyContent='center' mb={10} >
-            <Text p={6} lineHeight={0.9}  Textalign='start' fontWeight='900' fontSize={[55, 60, 90]}>
+            <Text p={6} lineHeight={0.86}  Textalign='start' fontWeight='900' fontSize={[67, 60, 100]}>
                     Somos distintos a los demas 
                 </Text>
                 <Text Textalign='start' ml={6}>
@@ -40,7 +40,7 @@ centerContent
 
             </Box>
             <Box align='center'
-            maxW={500} ml={[,2,3,9]} p={2}>
+            maxW={540} ml={[,2,3,9]} p={2}>
              <Image 
              align='center' 
              justify='center' 
@@ -49,9 +49,9 @@ centerContent
 
             </Box>
         </SimpleGrid>
-<Box w='55px' position='fixed' borderRadius='full' bottom='50px' right='25px' zIndex='100' boxShadow='lg'>
+<Box w='55px' position='fixed'  bottom='50px' right='25px' zIndex='100'  >
     <Link outline='none'href='https://api.whatsapp.com/send?phone=2984134931' isExternal>
-        <Image  src='https://res.cloudinary.com/dsjas6fvz/image/upload/v1658713033/Radio%20Agua%20de%20Vida/pngwing.com_dlalmd.png' />
+        <Image borderRadius='2xl'  src='https://res.cloudinary.com/dsjas6fvz/image/upload/v1658713033/Radio%20Agua%20de%20Vida/pngwing.com_dlalmd.png' />
     </Link>
 </Box>
     </Container >
