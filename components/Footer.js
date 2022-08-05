@@ -12,12 +12,16 @@ import {FaYoutube, FaFacebook, FaInstagram} from "react-icons/fa";
 const Footer = () => {
   return (
     <Container
+      mt={6}
       as='footer'
       role='contentinfo'
       py={{
-        base: "4",
+        base: "2",
         md: "7",
       }}
+      bg='#1d3557'
+      color='white'
+      maxW='container.xl'
     >
       <Stack
         spacing={{
@@ -51,7 +55,7 @@ const Footer = () => {
             </Link>
           </ButtonGroup>
         </Stack>
-        <Text fontSize='sm' color='subtle'>
+        <Text fontSize='sm' color='subtle' align='center'>
           &copy; {new Date().getFullYear()} Radio Agua de Vida by
           @lauchaventura. Todos los derechos reservados.
         </Text>

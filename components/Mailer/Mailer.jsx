@@ -50,7 +50,7 @@ export const Mailer = () => {
         columns={[1, 2]}
         mt={4}
         fontSize='15px'
-        height='100vh'
+        height='88vh'
       >
         <Box>
           <Text
