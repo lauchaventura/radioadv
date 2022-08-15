@@ -12,7 +12,7 @@ import {
 
 const CardsDonation = () => {
   return (
-    <Container maxW='container.xl' id='donaciones'>
+    <>
       <Grid
         align='center'
         mb={6}
@@ -20,7 +20,12 @@ const CardsDonation = () => {
         gridGap={3}
         templateColumns='repeat(auto-fill, minmax(240px, 1fr))'
       >
-        <Box borderRadius='md' boxShadow='2xl'>
+        <Box
+          borderRadius='md'
+          boxShadow='lg'
+          transition='500ms'
+          _hover={{boxShadow: "2xl", transform: "translateY(-3%)"}}
+        >
           <Box bg='#a8dadc'>
             <Image
               src='https://res.cloudinary.com/dsjas6fvz/image/upload/v1653339183/Radio%20Agua%20de%20Vida/1_fvo0wm.png'
@@ -50,7 +55,12 @@ const CardsDonation = () => {
           </Box>
         </Box>
 
-        <Box boxShadow='2xl' borderRadius='md'>
+        <Box
+          boxShadow='lg'
+          borderRadius='md'
+          transition='500ms'
+          _hover={{boxShadow: "2xl", transform: "translateY(-3%)"}}
+        >
           <Box bg='#457b9d'>
             <Image
               bg='#a8dadc'
@@ -75,7 +85,11 @@ const CardsDonation = () => {
             />
           </Box>
         </Box>
-        <Box boxShadow='2xl'>
+        <Box
+          boxShadow='lg'
+          transition='all 500ms ease'
+          _hover={{boxShadow: "2xl", transform: "translateY(-3%)"}}
+        >
           <Box bg='#1d3557'>
             <Image
               src='https://res.cloudinary.com/dsjas6fvz/image/upload/v1653339183/Radio%20Agua%20de%20Vida/3_pvqwyk.png'
@@ -92,7 +106,11 @@ const CardsDonation = () => {
             </Box>
           </Box>
         </Box>
-        <Box boxShadow='2xl'>
+        <Box
+          boxShadow='lg'
+          transition='500ms'
+          _hover={{boxShadow: "2xl", transform: "translateY(-3%)"}}
+        >
           <Box bg='#e63946'>
             <Image
               src='https://res.cloudinary.com/dsjas6fvz/image/upload/v1658857571/Radio%20Agua%20de%20Vida/avatar_gv8nca.png'
@@ -110,7 +128,7 @@ const CardsDonation = () => {
           </Box>
         </Box>
       </Grid>
-    </Container>
+    </>
   );
 };
 

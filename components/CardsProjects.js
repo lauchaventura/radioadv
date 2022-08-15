@@ -11,12 +11,13 @@ const CardsProjects = () => {
         align='center'
         spacing={3}
         color='#1A202C'
+        p={3}
       >
         <Box maxW='500px' boxShadow='2xl'>
           <Box>
             <AspectRatio maxW='560px' ratio={16 / 10}>
               <iframe
-                title='naruto'
+                title='Donaciones'
                 src='https://www.youtube.com/embed/APtGPKhyFWs'
                 allowFullScreen
               />
@@ -57,7 +58,7 @@ const CardsProjects = () => {
           >
             <Box align='end'>
               <Tag mt={2} mr={2} borderRadius='full' bg='#1A202C' color='white'>
-                2021
+                2021 - ∞
               </Tag>
             </Box>
 

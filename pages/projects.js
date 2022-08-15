@@ -21,40 +21,38 @@ const Projects = () => {
         <title>Radio Agua de Vida | Nuestros Proyectos</title>
       </Head>
       <Header />
-      <Container
-        maxW='container.xl'
+      <SimpleGrid
+        alignItems='center'
+        columns={[1, 2]}
         align='center'
-        wrap='wrap'
-        p={10}
-        centerContent
-        color='#1A202C'
+        spacing={20}
+        height='87vh'
       >
-        <SimpleGrid alignItems='center' columns={[1, 2]} spacing={10}>
-          <Box align='start' justifyContent='center'>
-            <Text
-              lineHeight={0.8}
-              ml={2}
-              Textalign='start'
-              fontWeight='900'
-              fontSize={[50, 60, 90]}
-            >
-              Estamos en donde tenemos que estar
-            </Text>
-            <Text Textalign='start' mt={5} ml={2}>
-              Somos Agua de Vida un medio audiovisual en donde encontraras lo
-              que buscas. Estamos para vos y para todo los que nos escuchan.
-            </Text>
-          </Box>
-          <Box align='center' maxW={500}>
-            <Image
-              align='center'
-              justify='center'
-              src='https://res.cloudinary.com/dsjas6fvz/image/upload/v1653580620/Radio%20Agua%20de%20Vida/proyectos_x4eids.png'
-            />
-          </Box>
-        </SimpleGrid>
-        <CardsProjects />
-      </Container>
+        <Box textAlign='start' ml={8}>
+          <Text
+            lineHeight={0.8}
+            ml={2}
+            Textalign='start'
+            fontWeight='900'
+            fontSize={[50, 60, 90]}
+          >
+            Estamos en donde tenemos que estar
+          </Text>
+          <Text Textalign='start' mt={5} ml={2}>
+            Somos Agua de Vida un medio audiovisual en donde encontraras lo que
+            buscas. Estamos para vos y para todo los que nos escuchan.
+          </Text>
+        </Box>
+        <Box align='center' maxW={500}>
+          <Image
+            align='center'
+            justify='center'
+            src='https://res.cloudinary.com/dsjas6fvz/image/upload/v1653580620/Radio%20Agua%20de%20Vida/proyectos_x4eids.png'
+          />
+        </Box>
+      </SimpleGrid>
+      <CardsProjects />
+
       <Stack
         bg={useColorModeValue("gray.50", "gray.800")}
         py={16}

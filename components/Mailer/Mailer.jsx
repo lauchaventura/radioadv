@@ -23,7 +23,7 @@ import {useRef} from "react";
 export const Mailer = () => {
   const form = useRef();
 
-  const sendEmail = (e) => {
+  const sendEmail = e => {
     e.preventDefault();
 
     emailjs
@@ -34,39 +34,38 @@ export const Mailer = () => {
         "c9w-zWBVZbAzNjxhf"
       )
       .then(
-        (result) => {
+        result => {
           console.log(result.text);
         },
-        (error) => {
+        error => {
           console.log(error.text);
         }
       );
   };
 
   return (
-    <Container maxW='container.xl' centerContent>
+    <>
       <SimpleGrid
         alignItems='center'
         columns={[1, 2]}
-        mt={4}
         fontSize='15px'
-        height='88vh'
+        align='center'
+        height='89vh'
       >
-        <Box>
+        <Box p={8}>
           <Text
-            p={6}
             lineHeight={0.8}
-            Textalign='start'
+            align='start'
             fontWeight='900'
             fontSize={[67, 60, 100]}
           >
             Estamos para vos las 24 horas
           </Text>
-          <Text ml={7} lineHeight={0.8} Textalign='start'>
+          <Text lineHeight={0.8} align='start' mt={3} ml={1}>
             Queres colaborar con nuestros servicios? No dudes en escribirnos.
           </Text>
         </Box>
-        <Box boxShadow='lg' p={5} maxW='500px' maxH='488px' height='100vh'>
+        <Box boxShadow='2xl' p={3} maxWidth='540px' align='start'>
           <form ref={form} onSubmit={sendEmail}>
             <Text align='center' fontWeight='900' size='md' color='#1D3557'>
               CONTACTATE CON NOSOTROS
@@ -140,7 +139,7 @@ export const Mailer = () => {
           </AspectRatio>
         </Box> */}
       </SimpleGrid>
-    </Container>
+    </>
   );
 };
 

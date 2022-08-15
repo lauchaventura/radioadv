@@ -71,7 +71,7 @@ const Programs = () => {
               );
             })
           ) : (
-            <Box align='center' p={40}>
+            <Box align='center' p={40} alignItems='center'>
               <Spinner
                 p={7}
                 thickness='4px'
