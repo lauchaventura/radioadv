@@ -17,9 +17,9 @@ import {motion} from "framer-motion";
 const Presentation = () => {
   return (
     <>
-      <Box p={[3, 0]}>
+      <Box p={[3, 0]} height='100%' w='100%'>
         <SimpleGrid alignItems='center' columns={[1, 2]}>
-          <Box align='start' justifyContent='center' mb={10}>
+          <Box align='start' justifyContent='center'>
             <Text
               ml={[3, 6]}
               lineHeight={0.83}
@@ -29,7 +29,7 @@ const Presentation = () => {
             >
               Somos distintos a los demas
             </Text>
-            <Text ml={[3, 8]} fontSize={[20, 20, 16]} mt={2}>
+            <Text ml={[3, 8]} fontSize={[16, 20, 16]} mt={2}>
               Somos Agua de Vida un medio audiovisual en donde encontraras lo
               que buscas. Estamos para vos y para todo los que nos escuchan.
             </Text>

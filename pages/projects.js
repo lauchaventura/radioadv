@@ -22,25 +22,28 @@ const Projects = () => {
         <title>Radio Agua de Vida | Nuestros Proyectos</title>
       </Head>
       <Header />
-      <Box height='100vh' w='100%'>
-        <SimpleGrid alignItems='center' columns={[1, 2]} align='center'>
+      <Box p={[3, 0]}>
+        <SimpleGrid alignItems='center' columns={[1, 2]} align='start'>
           <Box>
             <Text
-              p={6}
-              ml={[0, 1]}
+              ml={[3, 6]}
               lineHeight={0.83}
               fontWeight='900'
-              fontSize={[69, 60, 105]}
+              font='true'
+              fontSize={[62, 60, 105]}
             >
               Estamos con nuestra gente
             </Text>
-            <Text ml={[6, 8]} fontSize={[20, 20, 16]} mt={2}>
+            <Text ml={[3, 8]} fontSize={[16, 20, 16]} mt={3}>
               Somos Agua de Vida un medio audiovisual en donde encontraras lo
               que buscas. Estamos para vos y para todo los que nos escuchan.
             </Text>
           </Box>
-          <Box align='center' maxW={540} p={8} alignItems='center'>
-            <Image src='https://res.cloudinary.com/dsjas6fvz/image/upload/v1653580620/Radio%20Agua%20de%20Vida/proyectos_x4eids.png' />
+          <Box align='center' maxW={[540]} alignItems='center' ml={4} mr={4}>
+            <Image
+              mt={2}
+              src='https://res.cloudinary.com/dsjas6fvz/image/upload/v1653580620/Radio%20Agua%20de%20Vida/proyectos_x4eids.png'
+            />
           </Box>
         </SimpleGrid>
       </Box>
