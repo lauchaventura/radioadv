@@ -4,7 +4,7 @@ import {
   Image,
   Text,
   Grid,
-  Container,
+  SimpleGrid,
   Heading,
   Stack,
   Link,
@@ -13,10 +13,9 @@ import {
 const CardsDonation = () => {
   return (
     <>
-      <Grid
+      <SimpleGrid
         align='center'
         mb={6}
-        p={3}
         gridGap={3}
         templateColumns='repeat(auto-fill, minmax(240px, 1fr))'
       >
@@ -127,7 +126,7 @@ const CardsDonation = () => {
             </Box>
           </Box>
         </Box>
-      </Grid>
+      </SimpleGrid>
     </>
   );
 };

@@ -12,6 +12,7 @@ import {
 } from "@chakra-ui/react";
 import Header from "../components/Header";
 import CardsProjects from "../components/CardsProjects";
+import Footer from "../components/Footer";
 const axios = require("axios");
 
 const Projects = () => {
@@ -21,36 +22,28 @@ const Projects = () => {
         <title>Radio Agua de Vida | Nuestros Proyectos</title>
       </Head>
       <Header />
-      <SimpleGrid
-        alignItems='center'
-        columns={[1, 2]}
-        align='center'
-        spacing={20}
-        height='87vh'
-      >
-        <Box textAlign='start' ml={8}>
-          <Text
-            lineHeight={0.8}
-            ml={2}
-            Textalign='start'
-            fontWeight='900'
-            fontSize={[50, 60, 90]}
-          >
-            Estamos en donde tenemos que estar
-          </Text>
-          <Text Textalign='start' mt={5} ml={2}>
-            Somos Agua de Vida un medio audiovisual en donde encontraras lo que
-            buscas. Estamos para vos y para todo los que nos escuchan.
-          </Text>
-        </Box>
-        <Box align='center' maxW={500}>
-          <Image
-            align='center'
-            justify='center'
-            src='https://res.cloudinary.com/dsjas6fvz/image/upload/v1653580620/Radio%20Agua%20de%20Vida/proyectos_x4eids.png'
-          />
-        </Box>
-      </SimpleGrid>
+      <Box height='100vh' w='100%'>
+        <SimpleGrid alignItems='center' columns={[1, 2]} align='center'>
+          <Box>
+            <Text
+              p={6}
+              ml={[0, 1]}
+              lineHeight={0.83}
+              fontWeight='900'
+              fontSize={[69, 60, 105]}
+            >
+              Estamos con nuestra gente
+            </Text>
+            <Text ml={[6, 8]} fontSize={[20, 20, 16]} mt={2}>
+              Somos Agua de Vida un medio audiovisual en donde encontraras lo
+              que buscas. Estamos para vos y para todo los que nos escuchan.
+            </Text>
+          </Box>
+          <Box align='center' maxW={540} p={8} alignItems='center'>
+            <Image src='https://res.cloudinary.com/dsjas6fvz/image/upload/v1653580620/Radio%20Agua%20de%20Vida/proyectos_x4eids.png' />
+          </Box>
+        </SimpleGrid>
+      </Box>
       <CardsProjects />
 
       <Stack
@@ -61,16 +54,12 @@ const Projects = () => {
         align={"center"}
         direction={"column"}
       >
-        <Text
-          fontSize={{base: "xl", md: "2xl"}}
-          textAlign={"center"}
-          maxW={"3xl"}
-        >
+        <Text fontSize={{base: "xl", md: "2xl"}} maxW={"3xl"}>
           Trabajar en todos estos proyectos nos dejan una gran satisfaccion, el
           poder crear un multimedio para llegar a todos de distintas maneras,
           creo que seguimos conectados con la realidad.
         </Text>
-        <Box textAlign={"center"}>
+        <Box>
           <Avatar
             src={
               "https://res.cloudinary.com/dsjas6fvz/image/upload/c_scale,w_1184/v1658171215/Radio%20Agua%20de%20Vida/IMG_7327_qorg6b.jpg"
@@ -88,6 +77,7 @@ const Projects = () => {
           </Text>
         </Box>
       </Stack>
+      <Footer />
     </>
   );
 };

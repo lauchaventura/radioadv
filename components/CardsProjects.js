@@ -1,11 +1,11 @@
 import {Box, SimpleGrid, Text, AspectRatio, Badge, Tag} from "@chakra-ui/react";
 import React from "react";
+import Footer from "./Footer";
 
 const CardsProjects = () => {
   return (
     <div>
       <SimpleGrid
-        mt={4}
         textAlign='start'
         columns={[1, 2, 3]}
         align='center'

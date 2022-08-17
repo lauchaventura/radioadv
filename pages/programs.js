@@ -41,7 +41,7 @@ const Programs = () => {
         <title>Radio Agua de Vida | Programas</title>
       </Head>
       <Header />
-      <Container maxW='container.xl' centerContent>
+      <Container maxW='container.xl' centerContent minHeight='79vh'>
         <Grid
           p={3}
           gridGap={12}
@@ -71,9 +71,9 @@ const Programs = () => {
               );
             })
           ) : (
-            <Box align='center' p={40} alignItems='center'>
+            <Box align='center' alignItems='center'>
               <Spinner
-                p={7}
+                mt={[48]}
                 thickness='4px'
                 speed='0.65s'
                 emptyColor='gray.200'

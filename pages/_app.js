@@ -13,9 +13,7 @@ import {motion} from "framer-motion";
 function MyApp({Component, pageProps, router}) {
   return (
     <ChakraProvider theme={theme}>
-      <Box>
-        <Component {...pageProps} />
-      </Box>
+      <Component {...pageProps} />
     </ChakraProvider>
   );
 }
