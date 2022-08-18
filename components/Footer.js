@@ -11,7 +11,7 @@ import {FaYoutube, FaFacebook, FaInstagram} from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <Box bg='transparent' color='blackAlpha.700' p={4}>
+    <Box bg='white' color='blackAlpha.700' p={4}>
       <Stack
         spacing={{
           base: "4",

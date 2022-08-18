@@ -13,11 +13,11 @@ import {
 const CardsDonation = () => {
   return (
     <>
-      <SimpleGrid
-        align='center'
-        mb={6}
-        gridGap={3}
+      <Grid
+        p={6}
+        gridGap={8}
         templateColumns='repeat(auto-fill, minmax(240px, 1fr))'
+        align='center'
       >
         <Box
           borderRadius='md'
@@ -98,9 +98,9 @@ const CardsDonation = () => {
           </Box>
           <Box p={3}>
             <Text fontWeight='semibold'>Donar telefonicamente</Text>
-            <Text>Desde cualquier parte del mundo</Text>
+            <Text>Desde cualquier parte del mundo, estes donde estes</Text>
             <Box p='3'>
-              <Text>En Argentina: 2984134931</Text>
+              <Text mt={3}>En Argentina: 2984134931</Text>
               <Text>En el Exterior: (+549) 2984134931</Text>
             </Box>
           </Box>
@@ -119,14 +119,14 @@ const CardsDonation = () => {
           </Box>
           <Box p={3}>
             <Text fontWeight='semibold'>Donar presencialmente</Text>
-            <Text>En General Roca, Rio Negro</Text>
-            <Box p='3'>
-              <Text mt={3}>Nuestros estudios centrales</Text>
-              <Text mt={3}>Llamar previamente: 2984134931</Text>
+            <Text>En General Roca, Rio Negro, Argentina</Text>
+            <Box p='3' mt={3}>
+              <Text>Nuestros estudios centrales</Text>
+              <Text>Llamar previamente: 2984134931</Text>
             </Box>
           </Box>
         </Box>
-      </SimpleGrid>
+      </Grid>
     </>
   );
 };

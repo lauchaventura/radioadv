@@ -45,93 +45,103 @@ export const Mailer = () => {
 
   return (
     <>
-      <SimpleGrid
-        alignItems='center'
-        columns={[1, 2]}
-        fontSize='15px'
-        align='center'
-        height='89vh'
-      >
-        <Box p={8}>
+      <SimpleGrid alignItems='center' columns={[1, 2]} p={[3, 0]}>
+        <Box align='start'>
           <Text
-            lineHeight={0.8}
-            align='start'
+            ml={[3, 9]}
+            lineHeight={0.83}
             fontWeight='900'
-            fontSize={[67, 60, 100]}
+            font='true'
+            fontSize={[69, 60, 80, 115]}
           >
             Estamos para vos las 24 horas
           </Text>
-          <Text lineHeight={0.8} align='start' mt={3} ml={1}>
+          <Text ml={[3, 10]} fontSize={[16, 20, 18]} mt={2}>
             Queres colaborar con nuestros servicios? No dudes en escribirnos.
           </Text>
         </Box>
-        <Box boxShadow='2xl' p={3} maxWidth='540px' align='start'>
-          <form ref={form} onSubmit={sendEmail}>
-            <Text align='center' fontWeight='900' size='md' color='#1D3557'>
-              CONTACTATE CON NOSOTROS
-            </Text>
-            <Text mt={3} fontSize='15px'>
-              <Badge variant='outline' color='#1D3557'>
-                Direccion
-              </Badge>
-              {""} San Martin 5200, General Roca, Rio Negro, Codigo Postal: 8332
-            </Text>
-            <Text fontWeight='500' fontSize='15px' mt={2}>
-              <Badge variant='outline' colorScheme='whatsapp'>
-                Whatsapp{" "}
-              </Badge>
+        <Box align='center'>
+          <Box
+            boxShadow='2xl'
+            p={3}
+            maxWidth='540px'
+            align='start'
+            maxHeight='520px'
+            mt={2}
+          >
+            <form ref={form} onSubmit={sendEmail}>
+              <Text align='center' fontWeight='900' size='md' color='#1D3557'>
+                CONTACTATE CON NOSOTROS
+              </Text>
+              <Text mt={3} fontSize='15px'>
+                <Badge variant='outline' color='#1D3557'>
+                  Direccion
+                </Badge>
+                {""} San Martin 5200, General Roca, Rio Negro, Codigo Postal:
+                8332
+              </Text>
+              <Text fontWeight='500' fontSize='15px' mt={2}>
+                <Badge variant='outline' colorScheme='whatsapp'>
+                  Whatsapp{" "}
+                </Badge>
 
-              <Link
-                style={{textDecoration: "none"}}
-                href='https://api.whatsapp.com/send?phone=2984134931'
-                cursor='pointer'
-                fontWeight='bold'
+                <Link
+                  style={{textDecoration: "none"}}
+                  href='https://api.whatsapp.com/send?phone=2984134931'
+                  cursor='pointer'
+                  fontWeight='bold'
+                >
+                  {""} +54 9 2984134931
+                </Link>
+              </Text>
+              <Box></Box>
+              <Text mt={3} fontWeight='800'>
+                Nombre
+              </Text>
+              <Input variant='flushed' type='text' name='user_name' size='sm' />
+              <Text fontWeight='800' mt={5}>
+                Telefono
+              </Text>
+              <NumberInput
+                variant='flushed'
+                type='text'
+                name='user_phone'
+                size='sm'
               >
-                {""} +54 9 2984134931
-              </Link>
-            </Text>
-            <Box></Box>
-            <Text mt={3} fontWeight='800'>
-              Nombre
-            </Text>
-            <Input variant='flushed' type='text' name='user_name' size='sm' />
-            <Text fontWeight='800' mt={5}>
-              Telefono
-            </Text>
-            <NumberInput
-              variant='flushed'
-              type='text'
-              name='user_phone'
-              size='sm'
-            >
-              <NumberInputField />
-              <NumberInputStepper></NumberInputStepper>
-            </NumberInput>
+                <NumberInputField />
+                <NumberInputStepper></NumberInputStepper>
+              </NumberInput>
 
-            <Text mt={3} fontWeight='800'>
-              Email
-            </Text>
-            <Input type='email' name='user_email' variant='flushed' size='sm' />
-            <Text mt={3} fontWeight='800'>
-              Mensaje
-            </Text>
-            <Textarea variant='flushed' name='message' />
-            <Box align='center'>
-              <Button
-                colorScheme='blue'
-                variant='solid'
-                mt={4}
-                justify='center'
-                type='submit'
-                value='Send'
-                outline='none'
-                _focus={"outline: none"}
-                bg='#31587a'
-              >
-                ENVIAR
-              </Button>
-            </Box>
-          </form>
+              <Text mt={3} fontWeight='800'>
+                Email
+              </Text>
+              <Input
+                type='email'
+                name='user_email'
+                variant='flushed'
+                size='sm'
+              />
+              <Text mt={3} fontWeight='800'>
+                Mensaje
+              </Text>
+              <Textarea variant='flushed' name='message' />
+              <Box align='center'>
+                <Button
+                  colorScheme='blue'
+                  variant='solid'
+                  mt={4}
+                  justify='center'
+                  type='submit'
+                  value='Send'
+                  outline='none'
+                  _focus={"outline: none"}
+                  bg='#31587a'
+                >
+                  ENVIAR
+                </Button>
+              </Box>
+            </form>
+          </Box>
         </Box>
         {/* <Box boxShadow='2xl' backgroundColor='#fff' align='center'>
           <AspectRatio ratio={12 / 13}>

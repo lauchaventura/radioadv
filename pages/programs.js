@@ -51,7 +51,11 @@ const Programs = () => {
             APIdata.map(APIdata => {
               return (
                 <Box key={APIdata.id} APIdata={APIdata}>
-                  <Stack borderRadius='md' backgroundColor='gray.50'>
+                  <Stack
+                    borderRadius='md'
+                    backgroundColor='#1d3557'
+                    color='white'
+                  >
                     <Box p={4}>
                       <Text fontSize='lg' fontWeight='bold'>
                         {APIdata.name}

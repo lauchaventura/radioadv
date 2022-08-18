@@ -14,7 +14,7 @@ import {
 } from "@chakra-ui/react";
 import {HamburgerIcon} from "@chakra-ui/icons";
 
-const Header = (props) => {
+const Header = props => {
   const {isOpen, onOpen, onClose} = useDisclosure();
   const handleToggle = () => (isOpen ? onClose() : onOpen());
   const router = useRouter();
@@ -35,7 +35,7 @@ const Header = (props) => {
             <Box w='23' p={1}>
               <Text
                 cursor='pointer'
-                fontSize='28px'
+                fontSize='30px'
                 fontWeight='extrabold'
                 font
                 letterSpacing='tighter'
@@ -67,7 +67,7 @@ const Header = (props) => {
               cursor='pointer'
               color='#1A202C'
               fontWeight='semibold'
-              fontSize={15}
+              fontSize={17}
               transitionDuration='400ms'
               _hover={{color: "#e63946"}}
             >
@@ -81,7 +81,7 @@ const Header = (props) => {
               _hover={{color: "#e63946"}}
               fontWeight='semibold'
               transitionDuration='500ms'
-              fontSize={15}
+              fontSize={17}
             >
               Nuestros proyectos
             </Text>
@@ -92,7 +92,7 @@ const Header = (props) => {
               color='#1A202C'
               _hover={{color: "#e63946"}}
               fontWeight='extrabold'
-              fontSize={14}
+              fontSize={16}
               transitionDuration='400ms'
             >
               CONTACTANOS!

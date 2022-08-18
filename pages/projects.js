@@ -22,28 +22,32 @@ const Projects = () => {
         <title>Radio Agua de Vida | Nuestros Proyectos</title>
       </Head>
       <Header />
-      <Box p={[3, 0]}>
+      <Box p={[3, 0]} height='100%' width='100%'>
         <SimpleGrid alignItems='center' columns={[1, 2]} align='start'>
           <Box>
             <Text
-              ml={[3, 6]}
+              ml={[3, 9]}
               lineHeight={0.83}
               fontWeight='900'
               font='true'
-              fontSize={[62, 60, 105]}
+              fontSize={[62, 60, 90, 115]}
             >
               Estamos con nuestra gente
             </Text>
-            <Text ml={[3, 8]} fontSize={[16, 20, 16]} mt={3}>
-              Somos Agua de Vida un medio audiovisual en donde encontraras lo
-              que buscas. Estamos para vos y para todo los que nos escuchan.
+            <Text ml={[3, 10]} fontSize={[16, 20, 18]} mt={6}>
+              No somos una simple radio, nos solidarizamos con todos aquellos,
+              los cuales podemos llegar
             </Text>
           </Box>
-          <Box align='center' maxW={[540]} alignItems='center' ml={4} mr={4}>
-            <Image
-              mt={2}
-              src='https://res.cloudinary.com/dsjas6fvz/image/upload/v1653580620/Radio%20Agua%20de%20Vida/proyectos_x4eids.png'
-            />
+          <Box
+            align='center'
+            maxW={[590]}
+            alignItems='center'
+            ml={4}
+            mr={4}
+            mt={2}
+          >
+            <Image src='https://res.cloudinary.com/dsjas6fvz/image/upload/v1653580620/Radio%20Agua%20de%20Vida/proyectos_x4eids.png' />
           </Box>
         </SimpleGrid>
       </Box>
@@ -57,12 +61,12 @@ const Projects = () => {
         align={"center"}
         direction={"column"}
       >
-        <Text fontSize={{base: "xl", md: "2xl"}} maxW={"3xl"}>
+        <Text fontSize={{base: "xl", md: "2xl"}} maxW={"3xl"} align='center'>
           Trabajar en todos estos proyectos nos dejan una gran satisfaccion, el
           poder crear un multimedio para llegar a todos de distintas maneras,
           creo que seguimos conectados con la realidad.
         </Text>
-        <Box>
+        <Box align='center'>
           <Avatar
             src={
               "https://res.cloudinary.com/dsjas6fvz/image/upload/c_scale,w_1184/v1658171215/Radio%20Agua%20de%20Vida/IMG_7327_qorg6b.jpg"

@@ -12,9 +12,23 @@ import {motion} from "framer-motion";
 
 function MyApp({Component, pageProps, router}) {
   return (
-    <ChakraProvider theme={theme}>
-      <Component {...pageProps} />
-    </ChakraProvider>
+    <motion.div
+      key={router.route}
+      initial='pageInitial'
+      animate='pageAnimate'
+      variants={{
+        pageInitial: {
+          opacity: 0,
+        },
+        pageAnimate: {
+          opacity: 1,
+        },
+      }}
+    >
+      <ChakraProvider theme={theme}>
+        <Component {...pageProps} />
+      </ChakraProvider>
+    </motion.div>
   );
 }
 export default MyApp;
